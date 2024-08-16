@@ -1,0 +1,3412 @@
+{
+  "catalogue": {
+    "name": "Cult of Errahman 2024 Alpha 1",
+    "id": "0290-d7e0-9822-832b",
+    "authorName": "DarkSky",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "aa64-1e8e-66fc-9abf",
+    "gameSystemRevision": 55,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "categoryEntries": [
+      {
+        "name": "Towering Faith",
+        "id": "3113-c473-b978-e182",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "2416-226f-9b19-d279",
+            "field": "limit::24fd-8af8-0c78-001c",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 45
+          }
+        ]
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Cult of Errahman",
+        "id": "9a25-3aae-8496-4631",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Characters",
+            "id": "0edb-5f24-c8e4-4aa6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "953d-22cd-7ee1-36dc",
+            "constraints": [
+              {
+                "id": "496f-a9ad-23f0-57eb",
+                "field": "limit::24fd-8af8-0c78-001c",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 40
+              }
+            ]
+          },
+          {
+            "name": "Core",
+            "id": "1c77-f5f1-94a5-d0b5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "4bcd-01c8-ce5e-7108",
+            "constraints": [
+              {
+                "id": "493e-f7a8-b7fb-9f7d",
+                "field": "limit::24fd-8af8-0c78-001c",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 25
+              }
+            ]
+          },
+          {"name": "Special", "id": "b556-6796-455d-3bb5", "hidden": false, "primary": false, "targetId": "f8f1-3d4f-12bf-73cd"},
+          {"name": "Towering Faith", "id": "8a30-f6b3-d1e3-18bf", "hidden": false, "primary": false, "targetId": "3113-c473-b978-e182"}
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Plague Patriarch",
+        "id": "80ca-7a2b-ada2-a43f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "ea02-3f5a-fe98-2b97", "hidden": false, "primary": true, "targetId": "953d-22cd-7ee1-36dc"}],
+        "constraints": [
+          {
+            "id": "2c02-9481-e8da-b535",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 160}],
+        "entryLinks": [
+          {
+            "name": "Shield",
+            "id": "e2b8-0ac3-bade-7f26",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ff97-a295-86c8-76d5",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 5}]
+          },
+          {
+            "name": "Army General",
+            "id": "f03c-4c8d-bf63-3cf7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "d664-b973-594c-5971",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Special Items",
+            "id": "f871-5d36-76f5-5c6f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "9966-581f-40a0-628c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}],
+            "selectionEntryGroups": [
+              {
+                "name": "Special Items",
+                "id": "e31c-be2b-c3e8-6218",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "constraints": [
+                  {
+                    "id": "9845-4bf6-fbfc-c79d",
+                    "field": "24fd-8af8-0c78-001c",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 150
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "9845-4bf6-fbfc-c79d",
+                    "type": "set",
+                    "value": 200,
+                    "conditions": [
+                      {
+                        "childId": "d664-b973-594c-5971",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Artefacts",
+                    "id": "a646-beca-1489-cc0b",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "constraints": [
+                      {
+                        "id": "e82d-7e6c-6692-3d12",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 2
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Artefacts (non-Wizards)",
+                        "id": "05da-df4e-9600-bfbe",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "6e26-c5df-c19e-83d4",
+                        "type": "selectionEntryGroup"
+                      },
+                      {
+                        "name": "CoE Artefacts",
+                        "id": "03c7-0d22-14d2-0741",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "3240-dbdc-c42f-e48f",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Armour Enchantment",
+                    "id": "8674-c2ad-fb70-4d59",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "constraints": [
+                      {
+                        "id": "2e5e-4c0a-57fd-78d4",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Armour Enchantments",
+                        "id": "901d-88b6-4471-c7b7",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "74ad-3e59-5174-60fa",
+                        "type": "selectionEntryGroup"
+                      },
+                      {
+                        "name": "CoE Armour",
+                        "id": "2896-80eb-ece9-d6f3",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4de6-f088-56ba-117c",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Weapon Enchantment",
+                    "id": "56a4-ed0c-b55e-39e5",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "constraints": [
+                      {
+                        "id": "e567-e35c-c58c-04d1",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Enchantments",
+                        "id": "0c0a-7dfb-8562-e51b",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f853-d3c3-4165-d5ab",
+                        "type": "selectionEntryGroup"
+                      },
+                      {
+                        "name": "CoE Weapons",
+                        "id": "e702-99b5-0ca6-7e98",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "e547-2bce-ba2f-5e0d",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Sacred Plagues",
+            "id": "1cfb-2b88-c103-0190",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "entryLinks": [
+              {
+                "name": "Slug Pox",
+                "id": "0f9a-6cdd-fbc1-3a04",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3c0c-55d6-7d46-6d27",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+              },
+              {
+                "name": "Dread Rot",
+                "id": "dbc5-738c-94a1-d920",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2285-8c00-13dd-54ec",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+              },
+              {
+                "name": "Gnashing Fever",
+                "id": "e005-1b6e-bf07-03c6",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9cd8-c1c1-b22c-9cc0",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+              },
+              {
+                "name": "Trollscale",
+                "id": "9139-2fc9-4a11-bbcb",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "7177-edf1-4ef8-a7ff",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+              }
+            ]
+          },
+          {
+            "name": "Melee Weapon",
+            "id": "7aa8-515b-1e10-bbd9",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "923b-1330-26ac-c2f4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Bloodpox Blades",
+                "id": "e619-1f2b-3fa6-3fee",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "a447-4baa-1bab-de1e",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+              },
+              {
+                "name": "Great Weapon",
+                "id": "da94-b37e-bfde-89f9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2837-ec0d-956f-690a",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+              },
+              {
+                "name": "Plague Flail",
+                "id": "56f8-472a-c356-6b95",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "d79d-f2d5-6f4f-3551",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+              }
+            ]
+          },
+          {
+            "name": "Mount",
+            "id": "8815-4324-90dd-e178",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "entryLinks": [
+              {
+                "name": "Mount: Favoured Disciple",
+                "id": "78bb-087e-5c85-75ec",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "5e2a-814f-04a8-f3a9",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}],
+                "modifiers": [
+                  {
+                    "field": "25f5-fc3e-0cda-1a87",
+                    "type": "set",
+                    "value": 0,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "538d-5665-58a8-281d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "41fe-d2cc-82ef-381a",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "d51c-f479-52e6-4142",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "58a3-b06e-d52b-c72d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Mount: Leprous Cauldron",
+                "id": "c935-a3e3-64ce-55a6",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "f590-074c-9d63-ee21",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 270}],
+                "modifiers": [
+                  {
+                    "field": "1720-4be6-e002-77e8",
+                    "type": "set",
+                    "value": 0,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "538d-5665-58a8-281d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "47b1-c334-2935-e4f4",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "b841-2ec7-182f-fb11",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "589f-da5c-20ba-5f1a",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "b8a1-4182-3aba-ffd8",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "41fe-d2cc-82ef-381a",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "d51c-f479-52e6-4142",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "58a3-b06e-d52b-c72d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Swarm Priest",
+        "id": "9e04-83ee-fb0d-a9e7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "a5cc-3056-42f9-cc40", "hidden": false, "primary": true, "targetId": "953d-22cd-7ee1-36dc"}],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 115}],
+        "entryLinks": [
+          {
+            "name": "Light Armour",
+            "id": "d3ad-9d95-7721-8af4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dd27-6738-aebc-192e",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 5}]
+          },
+          {
+            "name": "Army General",
+            "id": "f99f-6930-437f-ac91",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "d664-b973-594c-5971",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Holy Triumvirate",
+            "id": "ea64-d092-52ad-2bb0",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "d3bc-0ff0-f028-de8f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "e4cb-e33c-15c1-6ef1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+          },
+          {
+            "name": "Special Items",
+            "id": "9879-980e-937a-d14a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "2b5d-6b9d-0db6-68bd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}],
+            "selectionEntryGroups": [
+              {
+                "name": "Special Items",
+                "id": "efa9-5dfa-8135-5550",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "constraints": [
+                  {
+                    "id": "cc45-2ae9-a06a-2ac4",
+                    "field": "24fd-8af8-0c78-001c",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 100
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Artefacts",
+                    "id": "3d4e-c49c-8384-1ff4",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "constraints": [
+                      {
+                        "id": "7cae-7584-3827-b6b8",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 2
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Artefacts (Wizards)",
+                        "id": "1c2b-937a-bce6-6046",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ab25-3916-e8af-98cb",
+                        "type": "selectionEntryGroup"
+                      },
+                      {
+                        "name": "CoE Artefacts",
+                        "id": "253e-ba7e-03b9-0529",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "3240-dbdc-c42f-e48f",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Armour Enchantment",
+                    "id": "c591-330a-cb10-5234",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "constraints": [
+                      {
+                        "id": "f068-e4dc-b536-9d88",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Armour Enchantments",
+                        "id": "b7ee-603d-3573-debd",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "74ad-3e59-5174-60fa",
+                        "type": "selectionEntryGroup"
+                      },
+                      {
+                        "name": "CoE Armour",
+                        "id": "633e-0e8b-ea2a-0712",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4de6-f088-56ba-117c",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Weapon Enchantment",
+                    "id": "01bc-4473-472b-6940",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "constraints": [
+                      {
+                        "id": "e7d3-95d2-0c28-6f61",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Enchantments",
+                        "id": "b6cb-9a53-ac55-a7e3",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f853-d3c3-4165-d5ab",
+                        "type": "selectionEntryGroup"
+                      },
+                      {
+                        "name": "CoE Weapons",
+                        "id": "4f7d-0b59-4ed3-fb60",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "e547-2bce-ba2f-5e0d",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wizard Path",
+            "id": "4ca5-3619-ddf9-cb53",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1660-5e17-2bd2-56d5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "ddb0-b6ca-3f33-57d3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Thaumaturgy",
+                "id": "b6d1-0232-7048-1cbd",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "3995-8361-08a6-6538",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Occultism",
+                "id": "5ac6-c73f-e40a-2498",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "ea10-0518-07c4-b2c9",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mount",
+            "id": "3815-10c2-9f70-f08b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "entryLinks": [
+              {
+                "name": "Mount: Favoured Disciple",
+                "id": "34dd-d4ed-7495-a16f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "5e2a-814f-04a8-f3a9",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 55}],
+                "modifiers": [
+                  {
+                    "field": "25f5-fc3e-0cda-1a87",
+                    "type": "set",
+                    "value": 0,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "538d-5665-58a8-281d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "41fe-d2cc-82ef-381a",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "d51c-f479-52e6-4142",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "58a3-b06e-d52b-c72d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Mount: Sacred Platform",
+                "id": "51b9-edbc-e675-4c7d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "c796-b90f-56b3-31e4",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 250}],
+                "modifiers": [
+                  {
+                    "field": "35d4-4e66-19b1-eb67",
+                    "type": "set",
+                    "value": 0,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "538d-5665-58a8-281d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "47b1-c334-2935-e4f4",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "b841-2ec7-182f-fb11",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "589f-da5c-20ba-5f1a",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "b8a1-4182-3aba-ffd8",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "41fe-d2cc-82ef-381a",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "d51c-f479-52e6-4142",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          },
+                          {
+                            "childId": "58a3-b06e-d52b-c72d",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wizard Level",
+            "id": "535d-9073-b843-2352",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "0c14-da25-9f13-422d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "5f73-af38-1863-7d07",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Wizard Apprentice",
+                "id": "7e98-943e-499d-df0c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9dfd-528a-2991-3f75",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Wizard Adept",
+                "id": "8952-8c39-d53d-3c99",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6d2e-3a7c-b8c4-2589",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 95}]
+              }
+            ]
+          },
+          {
+            "name": "Essence of a Free Mind Magic Path",
+            "id": "84b2-0f60-bdd0-8e5c",
+            "collective": false,
+            "hidden": true,
+            "import": true,
+            "constraints": [
+              {
+                "id": "fd77-f503-f144-3ffe",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "e618-e935-ee2d-2027",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "3db5-8d52-cfe9-fbfa",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Occultism",
+                "id": "84da-a9c7-4b96-cc81",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "bb0d-307b-ffd2-4d46",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5ac6-c73f-e40a-2498",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Thaumaturgy",
+                "id": "8d57-c1dc-bc4a-6fc8",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "03e9-7f2e-47e4-5a63",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "b6d1-0232-7048-1cbd",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plague Disciples",
+        "id": "4ca2-9607-0672-2a37",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "57c7-d60b-f5d2-df45", "hidden": false, "primary": true, "targetId": "4bcd-01c8-ce5e-7108"}],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}],
+        "entryLinks": [
+          {
+            "name": "Command Group",
+            "id": "db44-9592-273a-159d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b4c3-e840-1bd5-b746",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Plague Disciple",
+            "id": "d2b5-4db4-7de7-8e17",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "43dc-489e-82ee-25e0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 20
+              },
+              {
+                "id": "e1b1-ea78-3ec4-202a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 40
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 9}]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Sacred Plague",
+            "id": "b109-5a69-e208-3a84",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1db2-ad48-4ac6-a12a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Dread Rot",
+                "id": "6a55-d8a2-6e65-8f25",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2285-8c00-13dd-54ec",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Slug Pox",
+                "id": "33d6-8c56-9cc7-bedf",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3c0c-55d6-7d46-6d27",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Gnashing Fever",
+                "id": "d2ee-e99b-22e7-ee75",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9cd8-c1c1-b22c-9cc0",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Trollscale",
+                "id": "b6be-f295-07bc-1c44",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "7177-edf1-4ef8-a7ff",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "1db2-ad48-4ac6-a12a",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "c3e7-8c28-0d42-6aa8",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee Weapon",
+            "id": "58ab-10b5-1131-0a64",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "3313-56b4-1489-57f8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "2f82-3166-4f7b-db48",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Bloodpox Blades",
+                "id": "88ee-43af-8b26-40b2",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "a447-4baa-1bab-de1e",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "24fd-8af8-0c78-001c",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Great Weapon",
+                "id": "1963-3fc0-e80c-d779",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2837-ec0d-956f-690a",
+                "type": "selectionEntry"
+              }
+            ]
+          },
+          {
+            "name": "Banner Enchantment",
+            "id": "7601-b96e-caa3-f97f",
+            "collective": false,
+            "hidden": true,
+            "import": true,
+            "constraints": [
+              {
+                "id": "8901-a917-ca5c-64fd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Banner Enchantments (Unit)",
+                "id": "cac1-d429-26a9-a5dc",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "4eb1-cabb-a838-a005",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "CoE Banner Enchantments",
+                "id": "0b1b-a1da-de33-38c5",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "d0b8-b142-4f1a-0a04",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "8f82-6955-3d8a-01ea",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cult Converts",
+        "id": "d22a-96b6-9765-9cf2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "1724-4e7a-916f-cc0b", "hidden": false, "primary": true, "targetId": "4bcd-01c8-ce5e-7108"}],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}],
+        "entryLinks": [
+          {
+            "name": "Command Group",
+            "id": "cdaa-5357-63b9-3014",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b4c3-e840-1bd5-b746",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Convert",
+            "id": "7dc8-28f2-0194-a5e3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "e3fd-4fc5-c1cf-690e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 30
+              },
+              {
+                "id": "6e86-860f-308a-f080",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 80
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 4}]
+          }
+        ]
+      },
+      {
+        "name": "Giant Plague Rats (Core)",
+        "id": "cf86-b8a2-18bd-cfce",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "572f-e652-a889-0867", "hidden": false, "primary": true, "targetId": "4bcd-01c8-ce5e-7108"}],
+        "constraints": [
+          {
+            "id": "a2d5-19af-33b7-43d3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}],
+        "selectionEntries": [
+          {
+            "name": "Giant Rat",
+            "id": "1edc-1e5f-e7b4-2252",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "c397-fac7-c962-1f45",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 20
+              },
+              {
+                "id": "b190-c3b7-fccc-f27a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 30
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 5}]
+          }
+        ]
+      },
+      {
+        "name": "Plague Swarms",
+        "id": "aa3a-15de-5167-91eb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "d2e0-c659-d3bb-cd4f", "hidden": false, "primary": true, "targetId": "f8f1-3d4f-12bf-73cd"}],
+        "constraints": [
+          {
+            "id": "0595-98c3-8833-e890",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 45}],
+        "selectionEntries": [
+          {
+            "name": "Plague Swarm",
+            "id": "9e3b-b671-28d9-0743",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "7be4-b7e2-6272-5a5d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 2
+              },
+              {
+                "id": "001a-caf7-1152-b3c7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 8
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}]
+          }
+        ]
+      },
+      {
+        "name": "Giant Plague Rats",
+        "id": "0b64-bb61-496b-719d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "6b12-799e-55a4-19ec", "hidden": false, "primary": true, "targetId": "f8f1-3d4f-12bf-73cd"}],
+        "constraints": [
+          {
+            "id": "4c72-902a-08cd-7d79",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 4
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}],
+        "modifiers": [
+          {
+            "field": "4c72-902a-08cd-7d79",
+            "type": "decrement",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "cf86-b8a2-18bd-cfce",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Giant Rat",
+            "id": "b009-fc7d-85ad-a6f4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "f6cc-7b9d-00da-710b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 10
+              },
+              {
+                "id": "5d95-4ec4-ffcc-a95b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 30
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 5}]
+          }
+        ]
+      },
+      {
+        "name": "Pestilent Onager",
+        "id": "17b5-54a4-cc54-f7b8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "5fdb-14ad-8810-c811", "hidden": false, "primary": true, "targetId": "f8f1-3d4f-12bf-73cd"}],
+        "constraints": [
+          {
+            "id": "3969-4290-ab19-d674",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 180}]
+      },
+      {
+        "name": "Underworld Beast",
+        "id": "0137-f149-063f-e53e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "790a-a596-8f55-40a7", "hidden": false, "primary": true, "targetId": "f8f1-3d4f-12bf-73cd"}],
+        "constraints": [
+          {
+            "id": "7fbb-e8ba-aa20-d6fe",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 310}]
+      },
+      {
+        "name": "Brute Disciples",
+        "id": "bbef-1e7a-9f21-6966",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "d3a8-10f3-f09f-4e2c", "hidden": false, "primary": true, "targetId": "f8f1-3d4f-12bf-73cd"}],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": -60}],
+        "entryLinks": [
+          {
+            "name": "Champion",
+            "id": "c0c4-b6a6-f612-31ce",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c3e7-8c28-0d42-6aa8",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Brute Disciple",
+            "id": "915c-7146-68e4-4e93",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "543d-b41f-0937-c0d6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 6
+              },
+              {
+                "id": "e611-fd54-474c-d0b3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 12
+              },
+              {
+                "id": "f1fe-aaf2-7f99-386d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 24
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 55}]
+          }
+        ]
+      },
+      {
+        "name": "Urban Agitators",
+        "id": "295d-9bbf-b483-bb5b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "f292-8dd6-7167-ef2c", "hidden": false, "primary": true, "targetId": "4bcd-01c8-ce5e-7108"}],
+        "constraints": [
+          {
+            "id": "9a02-111d-6b65-ffce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}],
+        "entryLinks": [
+          {
+            "name": "Command Group",
+            "id": "7020-b62a-4ee4-608b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b4c3-e840-1bd5-b746",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Agitator",
+            "id": "6dca-aa35-2802-db3f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "8baa-9d26-f8a4-8efe",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 15
+              },
+              {
+                "id": "de69-784b-2b75-3e55",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 30
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 6}]
+          },
+          {
+            "name": "Insurgents",
+            "id": "7d47-d952-911b-d43e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "7398-335e-9066-de09",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}],
+            "modifiers": [
+              {
+                "field": "7398-335e-9066-de09",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 15
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Shooting Weapon",
+            "id": "adfc-210d-6883-817c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1ad4-f1cf-bf9d-762e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "0813-52cc-1412-1f87",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Throwing Weapons",
+                "id": "5a19-be6f-ba14-f874",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "b672-9729-1d95-cb6d",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "24fd-8af8-0c78-001c",
+                    "type": "increment",
+                    "value": 0,
+                    "repeats": [
+                      {
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Sling (4+)",
+                "id": "f0fd-a4a2-a208-e461",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "b0ce-d9e1-00e7-c537",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Banner Enchantment",
+            "id": "5bd2-5cd7-52d4-cf28",
+            "collective": false,
+            "hidden": true,
+            "import": true,
+            "constraints": [
+              {
+                "id": "612d-9b16-3bd5-8159",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Banner Enchantments (Unit)",
+                "id": "a5d7-b546-f5e0-0686",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "4eb1-cabb-a838-a005",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "CoE Banner Enchantments",
+                "id": "5a48-a66a-77d1-60de",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "d0b8-b142-4f1a-0a04",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "8f82-6955-3d8a-01ea",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plague Acolytes",
+        "id": "fc93-68b1-94d7-7c7c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "d2fd-4dc0-39cb-31aa", "hidden": false, "primary": true, "targetId": "3113-c473-b978-e182"}],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}],
+        "entryLinks": [
+          {
+            "name": "Command Group",
+            "id": "f32b-ab79-5c62-6e72",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b4c3-e840-1bd5-b746",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Plague Acolyte",
+            "id": "8b6b-2362-f61f-1de9",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "8e85-1e1c-5463-5f3b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 15
+              },
+              {
+                "id": "87f2-b046-df78-acaa",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 50
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 11}]
+          },
+          {
+            "name": "Vanguard",
+            "id": "54cf-708d-5901-0f4e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "e778-5dc4-0271-1326",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "9165-0bfa-62e9-3b78",
+                "field": "24fd-8af8-0c78-001c",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 120
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "24fd-8af8-0c78-001c",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The End is Nigh",
+            "id": "500b-07cf-382d-dc74",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "31d2-25a2-73b6-1267",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "31d2-25a2-73b6-1267",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 15
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Sacred Plague",
+            "id": "2d83-8a6f-606e-0cb7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "afab-3f3b-331d-3c30",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Dread Rot",
+                "id": "07cb-fe9a-f6d5-4112",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2285-8c00-13dd-54ec",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Slug Pox",
+                "id": "6729-78d5-2e7d-b809",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3c0c-55d6-7d46-6d27",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Gnashing Fever",
+                "id": "47d1-085e-9e46-39be",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9cd8-c1c1-b22c-9cc0",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Trollscale",
+                "id": "bedc-dc70-87ee-f8a0",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "7177-edf1-4ef8-a7ff",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "afab-3f3b-331d-3c30",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "c3e7-8c28-0d42-6aa8",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Banner Enchantment",
+            "id": "36c6-8011-77d6-3064",
+            "collective": false,
+            "hidden": true,
+            "import": true,
+            "constraints": [
+              {
+                "id": "cf79-75cc-e024-2840",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Banner Enchantments (Unit)",
+                "id": "e30c-cbf6-d1ec-c72c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "4eb1-cabb-a838-a005",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "CoE Banner Enchantments",
+                "id": "65f1-bd2b-57c9-1a1f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "d0b8-b142-4f1a-0a04",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "8f82-6955-3d8a-01ea",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Leper Monks",
+        "id": "784d-bdc2-4c29-acea",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "76f1-6e43-18b6-947e", "hidden": false, "primary": true, "targetId": "3113-c473-b978-e182"}],
+        "constraints": [
+          {
+            "id": "fe4e-c5e9-c088-cc28",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 4
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}],
+        "entryLinks": [
+          {
+            "name": "Command Group",
+            "id": "c952-ae51-292e-a068",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b4c3-e840-1bd5-b746",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Monk",
+            "id": "f14f-cdc4-5759-2959",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "a088-8174-bc6b-2458",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 10
+              },
+              {
+                "id": "3783-32a0-5211-9f28",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 30
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 12}]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Sacred Plague",
+            "id": "d281-44d7-7309-097c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "28c9-a0fe-c0a4-7d0c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Dread Rot",
+                "id": "8399-83e6-872a-7ce1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2285-8c00-13dd-54ec",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Slug Pox",
+                "id": "8dec-6a1f-388a-eded",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3c0c-55d6-7d46-6d27",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Gnashing Fever",
+                "id": "9e65-a73b-b196-e37e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9cd8-c1c1-b22c-9cc0",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              },
+              {
+                "name": "Trollscale",
+                "id": "e407-c835-bc3c-3a8c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "7177-edf1-4ef8-a7ff",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "28c9-a0fe-c0a4-7d0c",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "c3e7-8c28-0d42-6aa8",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Banner Enchantment",
+            "id": "76f2-b98a-f1d0-7f75",
+            "collective": false,
+            "hidden": true,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1850-6caf-4f58-ffa6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Banner Enchantments (Unit)",
+                "id": "d63b-c9ad-7b64-078a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "4eb1-cabb-a838-a005",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "CoE Banner Enchantments",
+                "id": "f63c-a4e2-a8e2-090b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "d0b8-b142-4f1a-0a04",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "8f82-6955-3d8a-01ea",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Infected Giant",
+        "id": "4418-5958-1de4-5664",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "d851-9d49-d246-c19c", "hidden": false, "primary": false, "targetId": "3113-c473-b978-e182"},
+          {"name": "New CategoryLink", "id": "9df6-56f3-2b4a-16b9", "hidden": false, "primary": true, "targetId": "3113-c473-b978-e182"}
+        ],
+        "constraints": [
+          {
+            "id": "02a8-88d7-ad42-88cd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 275}],
+        "selectionEntries": [
+          {
+            "name": "Big Brother",
+            "id": "ef08-7b5f-631d-8421",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "7f06-cd59-23f3-b1fd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 25}]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Blood",
+            "id": "dd3d-dc7b-d5fb-d763",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "d813-96c3-3c19-9932",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "8260-6f41-186c-faf3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Bloodpox Blades",
+                "id": "b989-9155-4d31-cda1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "a447-4baa-1bab-de1e",
+                "type": "selectionEntry"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Plague Flail and Frenzy",
+                "id": "829b-770c-b4c1-f5ff",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+              },
+              {
+                "name": "Giant Club",
+                "id": "c3d9-b091-2665-97c1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 25}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Pestilential Wrath",
+        "id": "156b-1931-e338-5723",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6748-d55c-6e9e-04b9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "9307-7d4a-91c9-95e9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 70}]
+      },
+      {
+        "name": "°Toxic Incense",
+        "id": "8a86-072f-ed7a-976f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e2c4-d186-f48a-dd43",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "d88a-bf59-bcef-4a5c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Putrid Pamphlet",
+        "id": "718c-3d9d-cb14-e89d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f8eb-5226-49f3-3a08",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "9eee-e6bb-b293-5ccd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "Plague Prophet's Blessing",
+        "id": "d51c-f479-52e6-4142",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9430-6c21-b2c0-dcda",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "babb-60cf-ea1d-d319",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Martyr's Shroud",
+        "id": "481b-3d24-6c88-610c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b1a0-2c47-d624-9820",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "2630-f96c-a845-7e03",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 55}]
+      },
+      {
+        "name": "Eye of Errahman",
+        "id": "a116-6780-218e-4751",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ed57-e7b5-0095-1d8a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "9294-f6f5-d48d-2dbd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Orator's Toga",
+        "id": "58a3-b06e-d52b-c72d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0a98-0be7-26bf-37af",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "32e3-1ad8-0921-a9b3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Dread Rot",
+        "id": "2285-8c00-13dd-54ec",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0bf8-0470-30ab-d1d9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Plague Flail",
+        "id": "d79d-f2d5-6f4f-3551",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f78b-d8e0-7279-6f78",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Gnashing Fever",
+        "id": "9cd8-c1c1-b22c-9cc0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c360-dc40-6545-01cb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Trollscale",
+        "id": "7177-edf1-4ef8-a7ff",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "617d-b84a-5088-f5b9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Slug Pox",
+        "id": "3c0c-55d6-7d46-6d27",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e470-917e-0917-06c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Crucible of Contagion",
+        "id": "b841-2ec7-182f-fb11",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a030-19bc-af81-5f62",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "b449-15b2-2c8e-5197",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 90}]
+      },
+      {
+        "name": "Bloodpox Blades",
+        "id": "a447-4baa-1bab-de1e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ec52-786e-417a-b692",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Mount: Sacred Platform",
+        "id": "c796-b90f-56b3-31e4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "35d4-4e66-19b1-eb67",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "2818-855c-f83f-997c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "Mount: Favoured Disciple",
+        "id": "5e2a-814f-04a8-f3a9",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "25f5-fc3e-0cda-1a87",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "eb47-ed3f-305b-5778",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "name": "Mount: Leprous Cauldron",
+        "id": "f590-074c-9d63-ee21",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1720-4be6-e002-77e8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "778e-e2e6-6060-7511",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "CoE Weapons",
+        "id": "e547-2bce-ba2f-5e0d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "°Toxic Incense",
+            "id": "27a5-d051-9c53-3ea1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8a86-072f-ed7a-976f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Pestilential Wrath",
+            "id": "f4d9-3d2c-1158-5697",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "156b-1931-e338-5723",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "CoE Armour",
+        "id": "4de6-f088-56ba-117c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Plague Prophet's Blessing",
+            "id": "ac06-60de-2109-2059",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "d51c-f479-52e6-4142",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "CoE Banner Enchantments",
+        "id": "d0b8-b142-4f1a-0a04",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Martyr's Shroud",
+            "id": "0cec-6f59-df2c-43ad",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "481b-3d24-6c88-610c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Eye of Errahman",
+            "id": "d3cc-9a67-7bb8-1934",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "a116-6780-218e-4751",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "CoE Artefacts",
+        "id": "3240-dbdc-c42f-e48f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Putrid Pamphlet",
+            "id": "f4d7-a7bf-e45e-bf69",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "718c-3d9d-cb14-e89d",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Crucible of Contagion",
+            "id": "d86d-f2b0-180e-bba5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2285-8c00-13dd-54ec",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Orator's Toga",
+            "id": "84cb-fff9-e806-e9ca",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "58a3-b06e-d52b-c72d",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ]
+  }
+}
