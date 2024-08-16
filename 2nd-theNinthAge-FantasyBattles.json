@@ -1,0 +1,3535 @@
+{
+  "gameSystem": {
+    "name": "The 9th Age: Fantasy Battles 2nd Edition 2024",
+    "id": "aa64-1e8e-66fc-9abf",
+    "authorName": "DarkSky",
+    "authorUrl": "https://www.the-ninth-age.com/community/index.php?board-list/",
+    "battleScribeVersion": 2.03,
+    "revision": 56,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Core", "id": "4bcd-01c8-ce5e-7108", "hidden": false},
+      {"name": "Special", "id": "f8f1-3d4f-12bf-73cd", "hidden": false},
+      {"name": "Characters", "id": "953d-22cd-7ee1-36dc", "hidden": false}
+    ],
+    "costTypes": [{"name": "pts", "id": "24fd-8af8-0c78-001c", "defaultCostLimit": -1, "hidden": false}],
+    "forceEntries": [{"name": "~ Dummy ~", "id": "16e8-e66f-0b41-756b", "hidden": true}],
+    "profileTypes": [
+      {
+        "name": "1 Global",
+        "id": "8292-1fb8-8251-29a9",
+        "characteristicTypes": [
+          {"name": "Adv", "id": "b0d9-2dab-f10b-9b13"},
+          {"name": "Mar", "id": "db10-a838-f72f-3ed6"},
+          {"name": "Dis", "id": "be28-67a6-2280-9eaf"},
+          {"name": "Rules", "id": "8f96-9d74-2aaa-da9d"}
+        ]
+      },
+      {
+        "name": "3 Offensive",
+        "id": "154c-6605-1486-e1da",
+        "characteristicTypes": [
+          {"name": "Att", "id": "8265-800f-bc87-d00a"},
+          {"name": "Off", "id": "7d3b-bb95-3d29-26f7"},
+          {"name": "Str", "id": "4d4a-2100-804f-99e5"},
+          {"name": "AP", "id": "7a8c-adb0-d1b8-a1b6"},
+          {"name": "Agi", "id": "2a23-367f-8828-c297"},
+          {"name": "Rules", "id": "44e9-6a3e-7471-8b36"}
+        ]
+      },
+      {
+        "name": "2 Defensive",
+        "id": "e7d3-5099-e669-c365",
+        "characteristicTypes": [
+          {"name": "HP", "id": "f381-7850-7fa8-3440"},
+          {"name": "Def", "id": "160d-4624-273f-2114"},
+          {"name": "Res", "id": "ec15-bc66-645e-db5d"},
+          {"name": "Arm", "id": "597b-8735-3dd1-0e70"},
+          {"name": "Rules", "id": "91c5-9d30-bda7-cf14"}
+        ]
+      },
+      {
+        "name": "6 Ranged Weapon",
+        "id": "a00c-d586-ee68-ed21",
+        "characteristicTypes": [
+          {"name": "Range", "id": "c2a8-bc01-360c-6aca"},
+          {"name": "Shots", "id": "6867-dcc2-7874-e3b4"},
+          {"name": "Str", "id": "f166-13ff-9227-4525"},
+          {"name": "AP", "id": "857a-4ce1-d134-8701"},
+          {"name": "Attributes", "id": "d988-3828-5f00-7582"}
+        ]
+      },
+      {
+        "name": "4 Armour",
+        "id": "658e-7f7b-4e4f-162a",
+        "characteristicTypes": [{"name": "Type", "id": "017b-143b-0520-bdc1"}, {"name": "Save", "id": "4ca3-2498-f356-f056"}, {"name": "Rules", "id": "f269-16dd-a614-0f90"}]
+      },
+      {
+        "name": "7 Artefact",
+        "id": "5bba-441c-01cb-6187",
+        "characteristicTypes": [{"name": "Type", "id": "d779-a728-a38c-8340"}, {"name": "Effect", "id": "9f42-950f-d2ed-9247"}]
+      },
+      {
+        "name": "5 Melee Weapon",
+        "id": "a32f-208a-be3d-ad8d",
+        "characteristicTypes": [{"name": "Str", "id": "7d4e-b182-dd11-52a0"}, {"name": "AP", "id": "646b-1e72-1589-5083"}, {"name": "Attributes", "id": "048a-df92-bb5b-6de9"}]
+      },
+      {
+        "name": "0 Size",
+        "id": "7733-ad26-4b46-6a5a",
+        "characteristicTypes": [{"name": "Height", "id": "0d1d-aeaf-8f31-fd17"}, {"name": "Type", "id": "1176-4910-e04b-f1c5"}, {"name": "Base", "id": "7bbb-3d47-ed57-284d"}]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Shield",
+        "id": "1da1-0128-4bf2-cf8d",
+        "hidden": false,
+        "typeId": "658e-7f7b-4e4f-162a",
+        "typeName": "4 Armour",
+        "characteristics": [
+          {"name": "Type", "$text": "Shield", "typeId": "017b-143b-0520-bdc1"},
+          {"name": "Save", "$text": "+1", "typeId": "4ca3-2498-f356-f056"},
+          {"name": "Rules", "$text": "Parry", "typeId": "f269-16dd-a614-0f90"}
+        ]
+      },
+      {
+        "name": "Light Armour",
+        "id": "ceb4-e216-c1ec-56a4",
+        "hidden": false,
+        "typeId": "658e-7f7b-4e4f-162a",
+        "typeName": "4 Armour",
+        "characteristics": [
+          {"name": "Type", "$text": "Suit of Armour", "typeId": "017b-143b-0520-bdc1"},
+          {"name": "Save", "$text": "+1", "typeId": "4ca3-2498-f356-f056"},
+          {"name": "Rules", "$text": "A model part can only wear a single Suit of Armour.", "typeId": "f269-16dd-a614-0f90"}
+        ]
+      },
+      {
+        "name": "Heavy Armour",
+        "id": "37ab-dde5-6b99-7c67",
+        "hidden": false,
+        "typeId": "658e-7f7b-4e4f-162a",
+        "typeName": "4 Armour",
+        "characteristics": [
+          {"name": "Type", "$text": "Suit of Armour", "typeId": "017b-143b-0520-bdc1"},
+          {"name": "Save", "$text": "+2", "typeId": "4ca3-2498-f356-f056"},
+          {"name": "Rules", "$text": "A model part can only wear a single Suit of Armour.", "typeId": "f269-16dd-a614-0f90"}
+        ]
+      },
+      {
+        "name": "Plate Armour",
+        "id": "85fa-68ac-214d-2f4b",
+        "hidden": false,
+        "typeId": "658e-7f7b-4e4f-162a",
+        "typeName": "4 Armour",
+        "characteristics": [
+          {"name": "Type", "$text": "Suit of Armour", "typeId": "017b-143b-0520-bdc1"},
+          {"name": "Save", "$text": "+3", "typeId": "4ca3-2498-f356-f056"},
+          {"name": "Rules", "$text": "A model part can only wear a single Suit of Armour.", "typeId": "f269-16dd-a614-0f90"}
+        ]
+      },
+      {
+        "name": "Hand Weapon",
+        "id": "2d01-b358-db9b-3b99",
+        "hidden": false,
+        "typeId": "a32f-208a-be3d-ad8d",
+        "typeName": "5 Melee Weapon",
+        "characteristics": [
+          {"name": "Str", "$text": "As User", "typeId": "7d4e-b182-dd11-52a0"},
+          {"name": "AP", "$text": "As User", "typeId": "646b-1e72-1589-5083"},
+          {
+            "name": "Attributes",
+            "$text": "All models come equipped with a Hand Weapon as their default equipment. If a model has any Close Combat Weapon other than a Hand Weapon, it cannot choose to use the Hand Weapon, unless specifically stated otherwise. Models on foot wielding a Hand Weapon alongside a Shield gain Parry .",
+            "typeId": "048a-df92-bb5b-6de9"
+          }
+        ]
+      },
+      {
+        "name": "Great Weapon",
+        "id": "ce6c-6fd5-c795-da76",
+        "hidden": false,
+        "typeId": "a32f-208a-be3d-ad8d",
+        "typeName": "5 Melee Weapon",
+        "characteristics": [
+          {"name": "Str", "$text": "+2", "typeId": "7d4e-b182-dd11-52a0"},
+          {"name": "AP", "$text": "+2", "typeId": "646b-1e72-1589-5083"},
+          {
+            "name": "Attributes",
+            "$text": "Two-Handed . Attacks made with a Great Weapon strike at Initiative Step 0 (regardless of the wielder’s Agility).",
+            "typeId": "048a-df92-bb5b-6de9"
+          }
+        ]
+      },
+      {
+        "name": "Halberd",
+        "id": "680b-8e56-dff9-240c",
+        "hidden": false,
+        "typeId": "a32f-208a-be3d-ad8d",
+        "typeName": "5 Melee Weapon",
+        "characteristics": [
+          {"name": "Str", "$text": "+1", "typeId": "7d4e-b182-dd11-52a0"},
+          {"name": "AP", "$text": "+1", "typeId": "646b-1e72-1589-5083"},
+          {"name": "Attributes", "$text": "Two-Handed", "typeId": "048a-df92-bb5b-6de9"}
+        ]
+      },
+      {
+        "name": "Paired Weapons",
+        "id": "06d7-e62c-0123-95ec",
+        "hidden": false,
+        "typeId": "a32f-208a-be3d-ad8d",
+        "typeName": "5 Melee Weapon",
+        "characteristics": [
+          {"name": "Str", "$text": "As User", "typeId": "7d4e-b182-dd11-52a0"},
+          {"name": "AP", "$text": "As User", "typeId": "646b-1e72-1589-5083"},
+          {
+            "name": "Attributes",
+            "$text": "Two-Handed . The wielder gains +1 Attack Value and +1 Offensive Skill when using Paired Weapons. Attacks made with Paired Weapons ignore Parry.",
+            "typeId": "048a-df92-bb5b-6de9"
+          }
+        ]
+      },
+      {
+        "name": "Lance",
+        "id": "f1a1-62ad-69ea-9d18",
+        "hidden": false,
+        "typeId": "a32f-208a-be3d-ad8d",
+        "typeName": "5 Melee Weapon",
+        "characteristics": [
+          {"name": "Str", "$text": "As User", "typeId": "7d4e-b182-dd11-52a0"},
+          {"name": "AP", "$text": "As User", "typeId": "646b-1e72-1589-5083"},
+          {
+            "name": "Attributes",
+            "$text": "Attacks made with a Lance and allocated toward models in the wielders’ Front Facing gain Devastating Charge (+ 2 Strength, +2 Armour Penetration). Infantry cannot use Lances.",
+            "typeId": "048a-df92-bb5b-6de9"
+          }
+        ]
+      },
+      {
+        "name": "Light Lance",
+        "id": "8460-7bb5-aa92-d6ee",
+        "hidden": false,
+        "typeId": "a32f-208a-be3d-ad8d",
+        "typeName": "5 Melee Weapon",
+        "characteristics": [
+          {"name": "Str", "$text": "As User", "typeId": "7d4e-b182-dd11-52a0"},
+          {"name": "AP", "$text": "As User", "typeId": "646b-1e72-1589-5083"},
+          {
+            "name": "Attributes",
+            "$text": "Attacks made with a Light Lance and allocated toward models in the wielders’ Front Facing gain Devastating Charge (+1 Strength, +1 Armour Penetration). Infantry cannot use Light Lances.",
+            "typeId": "048a-df92-bb5b-6de9"
+          }
+        ]
+      },
+      {
+        "name": "Spear",
+        "id": "c18a-75bb-fa2f-f7cf",
+        "hidden": false,
+        "typeId": "a32f-208a-be3d-ad8d",
+        "typeName": "5 Melee Weapon",
+        "characteristics": [
+          {"name": "Str", "$text": "As User", "typeId": "7d4e-b182-dd11-52a0"},
+          {"name": "AP", "$text": "+1", "typeId": "646b-1e72-1589-5083"},
+          {
+            "name": "Attributes",
+            "$text": "Attacks made with a Spear gain Fight in Extra Rank. Attacks made with a Spear gain +2 Agility and an additional +1 Armour Penetration in the First Round of Combat provided the attacking model’s unit is not Charging and is not Engaged either in its Flank or Rear Facing. Only Infantry can use Spears.",
+            "typeId": "048a-df92-bb5b-6de9"
+          }
+        ]
+      },
+      {
+        "name": "Bow",
+        "id": "a564-30bf-f33f-f20d",
+        "hidden": false,
+        "typeId": "a00c-d586-ee68-ed21",
+        "typeName": "6 Ranged Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "24\"", "typeId": "c2a8-bc01-360c-6aca"},
+          {"name": "Shots", "$text": "1", "typeId": "6867-dcc2-7874-e3b4"},
+          {"name": "Str", "$text": "3", "typeId": "f166-13ff-9227-4525"},
+          {"name": "AP", "$text": "0", "typeId": "857a-4ce1-d134-8701"},
+          {"name": "Attributes", "$text": "Volley Fire", "typeId": "d988-3828-5f00-7582"}
+        ]
+      },
+      {
+        "name": "Longbow",
+        "id": "245b-baaf-f5ec-e168",
+        "hidden": false,
+        "typeId": "a00c-d586-ee68-ed21",
+        "typeName": "6 Ranged Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "30\"", "typeId": "c2a8-bc01-360c-6aca"},
+          {"name": "Shots", "$text": "1", "typeId": "6867-dcc2-7874-e3b4"},
+          {"name": "Str", "$text": "3", "typeId": "f166-13ff-9227-4525"},
+          {"name": "AP", "$text": "0", "typeId": "857a-4ce1-d134-8701"},
+          {"name": "Attributes", "$text": "Volley Fire", "typeId": "d988-3828-5f00-7582"}
+        ]
+      },
+      {
+        "name": "Crossbow",
+        "id": "fdf6-3c15-644b-1ced",
+        "hidden": false,
+        "typeId": "a00c-d586-ee68-ed21",
+        "typeName": "6 Ranged Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "30\"", "typeId": "c2a8-bc01-360c-6aca"},
+          {"name": "Shots", "$text": "1", "typeId": "6867-dcc2-7874-e3b4"},
+          {"name": "Str", "$text": "4", "typeId": "f166-13ff-9227-4525"},
+          {"name": "AP", "$text": "1", "typeId": "857a-4ce1-d134-8701"},
+          {"name": "Attributes", "$text": "Unwieldy", "typeId": "d988-3828-5f00-7582"}
+        ]
+      },
+      {
+        "name": "Handgun",
+        "id": "b092-dbc5-4c60-9a80",
+        "hidden": false,
+        "typeId": "a00c-d586-ee68-ed21",
+        "typeName": "6 Ranged Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "24\"", "typeId": "c2a8-bc01-360c-6aca"},
+          {"name": "Shots", "$text": "1", "typeId": "6867-dcc2-7874-e3b4"},
+          {"name": "Str", "$text": "4", "typeId": "f166-13ff-9227-4525"},
+          {"name": "AP", "$text": "2", "typeId": "857a-4ce1-d134-8701"},
+          {"name": "Attributes", "$text": "Unwieldy", "typeId": "d988-3828-5f00-7582"}
+        ]
+      },
+      {
+        "name": "Pistol",
+        "id": "12c1-3184-6230-c142",
+        "hidden": false,
+        "typeId": "a00c-d586-ee68-ed21",
+        "typeName": "6 Ranged Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "12\"", "typeId": "c2a8-bc01-360c-6aca"},
+          {"name": "Shots", "$text": "1", "typeId": "6867-dcc2-7874-e3b4"},
+          {"name": "Str", "$text": "4", "typeId": "f166-13ff-9227-4525"},
+          {"name": "AP", "$text": "2", "typeId": "857a-4ce1-d134-8701"},
+          {"name": "Attributes", "$text": "Quick to Fire", "typeId": "d988-3828-5f00-7582"}
+        ]
+      },
+      {
+        "name": "Throwing Weapons",
+        "id": "8c83-06ff-024f-a235",
+        "hidden": false,
+        "typeId": "a00c-d586-ee68-ed21",
+        "typeName": "6 Ranged Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "8\"", "typeId": "c2a8-bc01-360c-6aca"},
+          {"name": "Shots", "$text": "2", "typeId": "6867-dcc2-7874-e3b4"},
+          {"name": "Str", "$text": "As User", "typeId": "f166-13ff-9227-4525"},
+          {"name": "AP", "$text": "As User", "typeId": "857a-4ce1-d134-8701"},
+          {"name": "Attributes", "$text": "Quick to Fire, Accurate", "typeId": "d988-3828-5f00-7582"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Ambush",
+        "id": "2dda-ee2f-cfce-7f16",
+        "description": "Units with Ambush may be deployed using Special Deployment rules. All units that will be deployed using the Ambush rule must be declared at step 8 of the Pre-Game Sequence (after Spell Selection), starting with the player that chose their Deployment Zone. Deploy your army as usual, but without the Ambushing units. Starting with your Player Turn 2, immediately after step 2 of the Movement Phase Sequence (after moving units with Random Movement), roll a dice for each of your Ambushing units. After rolling for all Ambushing units, all units that rolled 3+ enter the Battlefield from any Board Edge. Place the arriving units with their Rear Facing in contact and aligned with the Board Edge. Ambushers are subject to the following rules and restrictions:\n\n• Ambushing models can neither March Move during the Movement Phase in which they arrive, nor can they voluntarily end that Movement Phase farther away from the Board Edge that they arrived from than their March Rate.\n• Ambushing models count as having moved during the turn they arrive on the Battlefield.\n• If an Ambushing unit has not entered the Battlefield before the end of the game (e.g. due to failing all its 3+ rolls), the unit counts as destroyed.\n• An Ambushing unit that enters the Battlefield on Game Turn 4 or later loses Scoring.\n• An Ambushing Character may Ambush within an Ambushing unit that it is allowed to join (declare this when declaring which units are Ambushing). Roll only one dice for the Combined Unit.\n• Until arriving on the Battlefield, Ambushing units cannot perform any actions at all, and all their Special Items, rules, and abilities don’t work while off the board.",
+        "hidden": false
+      },
+      {
+        "name": "Battle Standard Bearer",
+        "id": "3ef6-167b-7d0f-b484",
+        "description": "An army may only include a single Battle Standard Bearer. The model gains Rally Around the Flag and Not a Leader. If the model has the option to buy Special Equipment, it is allowed to purchase up to two Banner Enchantments.",
+        "hidden": false
+      },
+      {
+        "name": "Bodyguard",
+        "id": "1d4a-2ada-4edb-0363",
+        "description": "While a Character is joined to a unit in which at least one model has Bodyguard, that Character gains Stubborn. When Characters or Character types are stated in brackets, Bodyguard only works for the specified Characters or Character types.",
+        "hidden": false
+      },
+      {
+        "name": "Channel",
+        "id": "5a46-f1e8-f840-a1de",
+        "description": "During step 3 of the Magic Phase Sequence , each of the Active Player’s models with Channel may add X Veil Tokens to its owner’s Veil Token pool. This Universal Rule is cumulative, adding the X of each instance of Channel to the model’s total Channel value (e.g. a model with Channel (1) and Channel (2) is treated like a model with Channel (3)).",
+        "hidden": false
+      },
+      {
+        "name": "Chariot",
+        "id": "8583-d413-d1ef-ec61",
+        "description": "The model must roll an additional D6 when taking Dangerous Terrain Tests. A model with Chariot can only be part of a unit consisting entirely of models with Chariot, unless specifically stated otherwise.",
+        "hidden": false
+      },
+      {
+        "name": "Supernal",
+        "id": "4d9a-1dea-1661-4083",
+        "description": "All attacks made by the model become Magical Attacks, including Special Attacks and Crush Attacks. In addition, the model gains Unstable, with the following exception: when a unit consisting entirely of models with Supernal loses a combat, it must take a Break Test (Stubborn or Steadfast units ignore Discipline modifiers from the Combat Score difference as normal):\n• If the Break Test is passed, ignore all Health Points that would be lost due to Unstable.\n• If the Break Test is failed, follow the rules for Unstable as normal.",
+        "hidden": false
+      },
+      {
+        "name": "Engineer",
+        "id": "c16c-8e9f-3d9c-7a2a",
+        "description": "Once per Shooting Phase, an unengaged Engineer may select a single War Machine within 6″ that has not fired yet to gain the following effects:\n• Set the Aim of one of the War Machine’s Artillery Weapons to the value given in brackets (X+).\n• You may reroll the roll on the Misfire Table.\n• You may reroll the dice (all of them or none) for determining the number of hits of a Flamethrower Artillery Weapon.",
+        "hidden": false
+      },
+      {
+        "name": "Feigned Flight",
+        "id": "06e4-3c2b-0e6d-e48f",
+        "description": "Models in a unit consisting solely of models with Feigned Flight do not become Shaken if their unit voluntarily chooses Flee as Charge Reaction and passes its Rally Test in its next Player Turn. The Reform after Rallying in this case does not prevent the unit from moving nor from shooting (but it still counts as having moved). This rule does not apply if a unit fails to rally on the next friendly Player Turn or involuntarily Flees (e.g. as a result of a failed Panic Test or if it was already Fleeing when being charged).",
+        "hidden": false
+      },
+      {
+        "name": "Tall",
+        "id": "229b-fa84-b9fe-b1ff",
+        "description": "Line of Sight drawn to or from a model with Tall is not blocked by models of the same size (as the model with Tall), unless the intervening model also has Tall. Remember that this also affects Cover (if a model blocks Line of Sight it contributes to Hard Cover, otherwise only to Soft Cover).",
+        "hidden": false
+      },
+      {
+        "name": "Fear",
+        "id": "ed2a-e8b3-cc1a-cce0",
+        "description": "Models in units in base contact with one or more enemy models with Fear suffer -1 Discipline. At the start of each Round of Combat, such units must take a Discipline Test, called a Fear Test. If this test is failed, the models in the unit are Shaken and Close Combat Attacks made by the models in the unit suffer -1 to hit, while Close Combat Attacks allocated against the models in the unit gain +1 to hit. These effects apply until the end of the Round of Combat. Models that have Fear themselves are immune to the effects of Fear.",
+        "hidden": false
+      },
+      {
+        "name": "Fly",
+        "id": "4a5a-48a4-b2f9-f6ed",
+        "description": "Units composed entirely of models with Fly may use Flying Movement during Charge Moves, Failed Charge Moves, Advance Moves, and March Moves. When a unit uses Flying Movement, substitute its models’ Advance Rate with the first value given in brackets (X), and their March Rate with the second value given in brackets (Y). A unit using Flying Movement ignores all Terrain Features and units during the Flying Movement. Note that:\n\n• It must follow the Unit Spacing rule at the end of the move.\n• It is affected by the Terrain Features from which it takes off and in which it lands.\n• All modifiers to ground movement values also apply to a model’s Fly values, unless specifically stated otherwise.\n• When declaring a Charge with a unit with Fly, you must declare if the unit will not use Flying Movement for the Charge Move.\n• A Failed Charge Move of a unit with Fly must use the type of movement (ground or Flying) that was chosen when the Charge was declared. If the unit would end its Failed Charge Move inside another unit’s Unit Boundary or inside Impassable Terrain, backtrack the move to the unit’s last legal position where it follows the Unit Spacing rule.",
+        "hidden": false
+      },
+      {
+        "name": "Front Rank",
+        "id": "d3a1-728e-7e9f-992d",
+        "description": "Front Rank specifies where in a unit the model may be placed and how the model moves inside its unit.\n\nA model with Front Rank must always be placed as far forwards as possible in its unit. This normally means that it must be placed in the first rank unless specifically stated otherwise.\n\nWhen making an Advance Move, March Move, or Reform with a unit that includes models with Front Rank, these models can be reorganised into a new position (still as far forwards as possible) as part of the move. This counts towards the distance moved by the unit (measure the distance from the starting position to the ending position of the centre of the model with Front Rank to determine how far it has moved). A model with Front Rank can either have a Matching Base or a Mismatching Base.\n\nMATCHING BASES\n\nIn Combined Units containing Characters and R&F models, a Character is considered to have a Matching Base if:\n• The model has the same base size as the R&F models.\n• The model’s base is the same size as a multiple of the R&F models’ bases (such as a 40×40 mm base in a 20×20 mm unit).\n\nFor Combined Units consisting entirely of Characters, Matching Bases are determined differently as these units do not contain any R&F models. The R&F base size for the purposes of Matching Bases must:\n\n• Correspond to the base size of at least one of the Characters\n• Result in as few Characters as possible having Mismatching Bases; the owner chooses in case of a tie\n\nFor example, in a unit consisting of a 25×25mm Character and two 25×50mm Characters, that base size is 25×25mm, as it does not result in any Mismatching Bases in the unit.\n\nIf the first rank is occupied by models with Front Rank, a model with Matching Base is placed in the second rank instead. If this rank is also occupied by models with Front Rank, it is placed in the third rank, and so on. Matching Bases are subject to the following rules and restrictions:\n\n• If the model has a larger base than the R&F models, it is considered to be in all ranks its base occupies for the purposes of calculating Full Ranks . For calculating the number of models in the unit’s ranks (e.g. for Full Ranks, Line Formation, Area Attack), the large base counts as the number of models it replaces.\n• If a model with a Matching Base has a longer base than the R&F models in the unit, the unit is allowed to have more than one incomplete rank if all incomplete ranks after the first consist entirely of models with such bases (for instance the rear parts of long bases such as War Platforms are allowed to form several incomplete ranks).\n• A model cannot join a unit that has more than one rank if its base is wider than the unit it wishes to join, nor can a unit Reform into a formation that is narrower than any model joined to the unit.\n\nIf a model with Front Rank moves inside or leaves a unit that has more than one rank, or if it is removed from such a unit as a casualty, the gap the model leaves must be filled with models without Front Rank. If there aren’t any models without Front Rank available, move models with Front Rank instead. After filling a gap, sometimes models with Front Rank must be redistributed in order for all such models to be as far forwards as possible. When this happens, move as few models as possible in order to have all models with Front Rank as far forwards as possible.\n\nIf a model with Front Rank moves inside or leaves a unit that has a single rank, or if it is removed from such a unit as a casualty, gaps may be created in the unit. If this leads to an illegal formation (there can only be gaps in an incomplete rear rank; see “Units”, page 8 ), slide as few models as possible to fill the now empty spot. In case of a draw, i.e. if the model was positioned in the middle of the rank, the owner decides which half of the remaining models to slide.\n\nMISMATCHING BASES\n\nAnything that is not a Matching Base is a Mismatching Base (such as a 50×75mm base inside a 25×50mm unit). A model with Mismatching Base is always placed in base contact to the side of the unit, aligned with its front. Only two Mismatching Bases can be joined to a single unit (one at each side). These models are considered to be only in the first rank, but are ignored when counting the number of models in each rank in order to establish the number of Full Ranks and whether or not a unit is in Line Formation. They form a file of one model each.\n\nDuring Advance Moves, March Moves, or Reforms, models with Mismatching Bases can only be moved to the other side of the unit as part of the move.",
+        "hidden": false
+      },
+      {
+        "name": "Stand Behind",
+        "id": "ccc1-4db1-6ef8-8bc7",
+        "description": "The model can be placed anywhere inside its unit (it doesn’t have to be placed as far forwards as possible, even if it has Front Rank). It cannot be placed farther forwards inside a unit than any model with Front Rank but without Stand Behind. Ignore Stand Behind for models with Mismatching Bases.",
+        "hidden": false
+      },
+      {
+        "name": "Rally Around the Flag",
+        "id": "bf56-e3dc-41ca-292b",
+        "description": "All units within 12\" of a friendly non-Fleeing model with Rally Around the Flag may reroll failed Discipline Tests.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless",
+        "id": "0ab3-2e1b-8c2b-a7fe",
+        "description": "If more than half of a unit's models are Fearless, the unit automatically passes Panic Tests and cannot declare a Flee Charge Reaction (unless already Fleeing). Models that are Fearless are also immune to the effects of Fear.",
+        "hidden": false
+      },
+      {
+        "name": "Insignificant",
+        "id": "10f4-4cf9-f713-7351",
+        "description": "Units consisting entirely of Insignificant models only cause Panic Tests on friendly units in which half the models or more are Insignificant. Units with Insignificant R&F models can only be joined by Insignificant Characters.",
+        "hidden": false
+      },
+      {
+        "name": "Commanding Presence",
+        "id": "2304-d0e4-f97b-c4e5",
+        "description": "All Generals have the Commanding Presence Universal Rule. The Discipline of all units within 12′′ of a friendly non-Fleeing model with Commanding Presence may be set to the Discipline value of that model (this ability follows the normal rules for “Values Set to a Fixed Number”, page 16, meaning that effects modifying the Discipline of the model with Commanding Presence are applied before setting the recipient model’s Discipline to that value; this value may then be further modified).",
+        "hidden": false
+      },
+      {
+        "name": "Light Troops",
+        "id": "8b75-3cd5-bd70-6210",
+        "description": "A unit composed entirely of models with Light Troops applies the following rules for Advance Moves and March Moves:\n\n• The unit may perform any number of Reforms, at any time during the move, and in any order. This does not prevent models with Light Troops from shooting this Player Turn.\n• The unit can move backwards and sideways as if moving forwards (i.e. up to its Advance/March Rate), but cannot leave the board with any part of its Unit Boundary.\n• The unit cannot perform any Wheels.\n\nIn addition:\n• Units composed entirely of models with Light Troops gain March and Shoot.\n• Units with more than half of their models with Light Troops always count as having 0 Full Ranks.\n• Infantry Characters gain Light Troops while joined to Infantry units of the same Height with Light Troops.",
+        "hidden": false
+      },
+      {"name": "Not a Leader", "id": "f611-6165-ada9-0d7d", "description": "The model cannot be the General", "hidden": false},
+      {
+        "name": "Magic Resistance",
+        "id": "3fbc-ceb2-b812-0e88",
+        "description": "Learned Spells and Bound Spells that are targeting at least one enemy unit with one or more models with Magic Resistance suffers a -X modifier to their casting roll (where X is given in brackets). This is an exception to the Casting and Dispelling Modifier rule. If there are different X values that could be used, use the highest value.",
+        "hidden": false
+      },
+      {
+        "name": "Pathmaster",
+        "id": "7a94-4a81-745e-66d1",
+        "description": "The Wizard may swap any of its Learned Spells for any other Learned Spell in the same Path and/or the Hereditary Spell. This rule overrides the Spell Selection rules connected to being Wizard Apprentice, Apprentice or Master.",
+        "hidden": false
+      },
+      {
+        "name": "Protean Magic",
+        "id": "9c73-bbca-fd62-c017",
+        "description": "During Spell Selection, the Wizard must select its spells from the Learned Spell 1 of each Path it has access to, as well as the Hereditary Spell of its army. This rule overrides the Spell Selection rules for Wizard Apprentices, Adepts, and Masters.",
+        "hidden": false
+      },
+      {"name": "Wizard Apprentice", "id": "0d8a-3fd8-a61d-5b74", "description": "The Wizard selects its spells as described in Spell Selection.", "hidden": false},
+      {
+        "name": "Wizard Adept",
+        "id": "c0a6-6da5-98d6-f051",
+        "description": "The Wizard gains Channel (1) and selects its spells as described in Spell Selection",
+        "hidden": false
+      },
+      {
+        "name": "Wizard Master",
+        "id": "fa5b-1bdc-8550-50c7",
+        "description": "The Wizard gains Channel (1) and a +1 modifier to its casting rolls, and selects its spells as described in Spell Selection.",
+        "hidden": false
+      },
+      {
+        "name": "Frenzy",
+        "id": "b6f2-241f-8379-3327",
+        "description": "At the start of the Charge Phase, each of your units with at least one model with Frenzy that could declare a Charge against an enemy unit within the unit’s Advance Rate +7′′ must take a Discipline Test , called a Frenzy Test. If the test is failed, the whole unit must declare a Charge this Player Turn if possible.\n\nFrenzy Tests and Restrain Pursuit Tests taken by units with at least one model with Frenzy are subject to Maximised Roll.\n\nIf there are different Advance Rates available in the unit, the Advance Rate used for the Frenzy Test and for the Charge Range is determined as follows:\n\n• If a model has more than one Advance Rate (e.g. due to Fly), the model must use the Advance Rate that has the highest chance of completing the Charge.\n• If a unit contains models with different Advance Rates, the unit must use the highest Advance Rate that all models in the unit can use (which will usually be the lowest Advance Rate in the unit).\n\nFor example, a model with Advance Rate 2′′ and Fly (8′′, 16′′) must use the Advance Rate from Fly. And if a Character in a Combined Unit has Advance Rate 4′′ while the R&F models have 6′′, the Combined Unit must use Advance Rate 4′′. Note that when a unit is forced to declare a Charge due to a failed Frenzy Test, it is not forced to Charge the enemy unit that triggered the Frenzy Test.",
+        "hidden": false
+      },
+      {
+        "name": "Massive Bulk",
+        "id": "33ac-93f2-47f5-d0f0",
+        "description": "If the model is mounted by a Character, ignore the rider’s Armour Equipment (including Armour Enchantments) and Personal Protections, unless specifically stated otherwise (such as Armour Enchantments that affect the bearer’s model).",
+        "hidden": false
+      },
+      {
+        "name": "Random Movement",
+        "id": "6e49-e056-5845-4b66",
+        "description": "At the end of step 2 of the Movement Phase Sequence (after Rallying Fleeing Units), a non-Fleeing unit with Random Movement must move using the rules for Pursuing units, with the following exceptions, which only apply in the Movement Phase, unless specifically stated otherwise:\n• It always moves the distance stated in brackets (X), which is also used for Flee Distance and Pursuit Distance (including Overruns).\n• It can choose which direction to Pivot in before rolling the Pursuit Distance.\n• It cannot move off the Board Edge.\n• It does not take Dangerous Terrain Tests unless Charging.\n\nThere are several restrictions connected with Random Movement:\n• The unit cannot move normally in the Movement Phase (Advance, March, Reform) and cannot declare Charges in the Charge Phase. Whenever it requires a March Rate (e.g. when Post-Combat Reforming), use the potential maximum value of X as its March Rate.\n• The unit cannot perform Magical Moves.\n• The unit loses Swiftstride and can never gain it (but X can be affected by Maximised/Minimised Roll from other sources).\n• Characters with Random Movement cannot join units, and units with Random Movement cannot be joined by Characters. Note that Characters that are part of a Combined Unit when the unit gains Random Movement will gain Random Movement too as they are already part of that unit.\n• If the unit has several instances of Random Movement, use the one with the lowest average (the owner chooses in case of a tie).",
+        "hidden": false
+      },
+      {
+        "name": "Scoring",
+        "id": "188e-05fb-8a95-60c8",
+        "description": "Units with at least one model with Scoring are considered to be Scoring Units, which are used for winning Secondary Objectives. Every army needs Scoring Units to be able to complete Secondary Objectives, which is why units with Scoring are marked in the Army Books with a special pennant icon.\n\nScoring can be lost during the game:\n• A unit that is Fleeing loses Scoring for as long as it is Fleeing.\n• An Ambushing unit that enters the Battlefield on Game Turn 4 or later loses Scoring for the rest of the game.\n• A unit that has performed a Post-Combat Reform loses Scoring until the start of the following Player Turn.\n• A Vanguarding model loses Scoring until the end of Game Turn 1.",
+        "hidden": false
+      },
+      {
+        "name": "Scout",
+        "id": "1c9f-ec16-529b-e3ca",
+        "description": "Units with Scout may be deployed using Special Deployment rules. All units that will be deployed using the Scout rule must be declared at step 8 of the Pre-Game Sequence (after Spell Selection), starting with the player that chose their Deployment Zone. Scout deployment is conducted on Step 5 of the Deployment Phase (Deploy Scouting Units). If both players have Scouting units, alternate unit placement (one unit at a time), starting with the player who first completed their normal deployment. Scouting units have three deployment options:\n• Fully inside your Deployment Zone, using the normal deployment rules\n• Anywhere on the Battlefield at least 18′′ away from enemy units\n• Anywhere on the Battlefield fully inside a Field, Forest, Ruins, or Water Terrain Feature and at least 12′′ away from enemy units\n\nScouting units that aren’t placed fully inside their Deployment Zone may not declare Charges in the first Player Turn of the first Game Turn (there are no Scout Charge restrictions after the first Player Turn).",
+        "hidden": false
+      },
+      {
+        "name": "Skirmisher",
+        "id": "2ce4-ece5-068c-4d20",
+        "description": "The model can always use Shooting Attacks from any rank (models with Skirmisher are not limited to shooting from first and second rank).\n\nUnits with at least one R&F model with Skirmisher are formed into a skirmish formation. They are not placed in base contact with each other. Instead, models are placed with a 12.5 mm distance (roughly half an inch) between them. This gap is considered part of the unit for Cover purposes, and will have the same Height as the models in the unit. Other than this gap between models, units with Skirmisher follow the normal rules for forming units and therefore have a Front, two Flank, and a Rear Facing, can perform Supporting Attacks, and so on. Units in skirmish formation never block Line of Sight (remember that this also affects Cover as they can never contribute to Hard Cover).\n\nUnits in skirmish formation can only be joined by Characters that have both the same Type and the same Height as the unit. Unless a Character has the exact same base size as all R&F models in the unit, it is considered Mismatched for the purpose of placement within the unit. The unit ceases to be in skirmish formation when all R&F models with Skirmisher are removed as a casualty: immediately contract their skirmish formation into a normal formation, without moving the centre of the first rank. Nudge any unit as normal to maintain base contact if possible.",
+        "hidden": false
+      },
+      {
+        "name": "Ghost Step",
+        "id": "36f9-836f-d687-5d43",
+        "description": "The model may choose to treat all Terrain Features as Open Terrain for movement purposes, but must follow the Unit Spacing rule upon the completion of its moves. It can never end its move inside Impassable Terrain. If this would be the case, backtrack the move to the unit’s last legal position (unless Fleeing, in which case the normal rules for “Flee Moves”, page 50 apply).\n\nIn addition, the model automatically passes Dangerous Terrain Tests taken due to Terrain.",
+        "hidden": false
+      },
+      {
+        "name": "Strider",
+        "id": "df36-dc35-ead5-1719",
+        "description": "The model automatically passes Dangerous Terrain Tests caused by Terrain. If more than half of a unit’s models have Strider, the unit never loses Steadfast due to Terrain. Sometimes Strider is linked to a specific type of Terrain, stated in brackets. In this case, Strider only applies when interacting with this type of Terrain.",
+        "hidden": false
+      },
+      {
+        "name": "Stubborn",
+        "id": "51bf-5c8d-5b95-e33c",
+        "description": "A unit with at least one model with Stubborn ignores any Combat Score penalties to its Discipline when taking Break Tests or Combat Reform Discipline Tests.",
+        "hidden": false
+      },
+      {
+        "name": "Swiftstride",
+        "id": "d15d-3c8e-23db-ab7b",
+        "description": "If a unit is composed entirely of models with Swiftstride, its rolls for Charge Range, Flee Distance, Pursuit Distance, and Overrun Distance are subject to Maximised Roll",
+        "hidden": false
+      },
+      {
+        "name": "Terror",
+        "id": "0b48-87f9-1467-7ef2",
+        "description": "The model is immune to the effects of Terror. When a unit with one or more models with Terror declares a Charge, its target must immediately take a Panic Test before declaring its Charge Reaction. If the test is failed, the target of the Charge must declare a Flee Charge Reaction if able to do so.",
+        "hidden": false
+      },
+      {
+        "name": "Towering Presence",
+        "id": "9ca4-65be-33fc-5d47",
+        "description": "The model gains Tall and can never be joined or join a unit (unless it is a War Platform). A model with Towering Presence increases its Rally Around the Flag and Commanding Presence ranges by 6\".",
+        "hidden": false
+      },
+      {
+        "name": "Unbreakable",
+        "id": "99ef-69e8-164b-3335",
+        "description": "The model gains Exclusive (Unbreakable), and the model’s unit automatically passes all Break Tests",
+        "hidden": false
+      },
+      {
+        "name": "Undead",
+        "id": "b558-1cce-fbc9-afe6",
+        "description": "The model gains Unstable. Models with Undead cannot perform March Moves, unless their unit starts the March Move within the range of a friendly model’s Commanding Presence. The only Charge Reaction a unit with one or more models with Undead can perform is Hold.\n\nWhen units consisting entirely of models with Undead lose Health Points due to Unstable, the number of lost Health Points can be reduced in certain situations. Apply the modifiers in the following order:\n1. If the unit contains at least one model with Stubborn, halve the number of lost Health Points, rounding fractions up.\n2. If the unit is Steadfast, ignore any excess Health Point losses above 12.\n3. If the unit receives Rally Around the Flag, reduce the number of lost Health Points by the unit’s current Rank Bonus. Units without any Rank Bonus reduce the number of lost Health Points by 1 instead.\n4. Apply all other modifiers (from Special Items, Model Rules, spells, etc.) afterwards.",
+        "hidden": false
+      },
+      {
+        "name": "Unstable",
+        "id": "b642-5b33-158d-421b",
+        "description": "The model gains Exclusive (Unstable). A unit with one or more models with Unstable does not take a Break Test when losing a Round of Combat, but instead it loses one Health Point for each point of Combat Score difference by which it lost the Round of Combat (with no saves of any kind allowed).\n\nThe Health Point losses are allotted in the following order:\n1. R&F models, excluding Champions\n2. Champion\n3. Characters, allotted by the owner of the unit as evenly as possible",
+        "hidden": false
+      },
+      {
+        "name": "Vanguard",
+        "id": "e4e4-ef11-f62f-59b6",
+        "description": "After Deployment (including Scouting units), models with Vanguard may perform a 12′′ move. This move is performed as a combination of Advance Move and/or Reforms , as in the Movement Phase, including any actions and restrictions that normally apply to the unit (e.g. Wheeling , joining units, leaving units, and so on). The 12′′ distance is used instead of the unit’s Advance Rate and March Rate. In case a figure is stated in brackets, this distance is X′′ instead. This move cannot be used to move within 12′′ of enemy units. This is decreased to 6′′ for enemy units that have either Scouted or Vanguarded.\n\nIf both players have units with Vanguard, alternate moving units one at a time, starting with the player that finished deploying last (note that this is an exception to the rules for Simultaneous Effects). A Combined Unit counts as a single unit for this purpose even if parts of the unit perform separate Vanguard moves (like two Characters Vanguarding out of a Combined Unit). Any game effects that would affect the Combined Unit (such as Banner Enchantments) remain in effect for all parts of the Combined Unit until all parts of the Combined Unit have finished their Vanguard move (even if a Character leaves the unit). Instead of moving a unit, a player may declare to not move any more Vanguarding units.\n\nUnits that have moved this way lose Scoring until the end of Game Turn 1 and may not declare Charges in the first Player Turn (if their side has the first turn).",
+        "hidden": false
+      },
+      {
+        "name": "War Machine",
+        "id": "610e-d71e-0439-9e7f",
+        "description": "The model cannot Pursue (which does not prevent it from being affected by Random Movement), declare Charges, or declare Flee Charge Reactions. Characters can never join units with War Machine, and Characters with War Machine cannot join units.\nWhen a War Machine fails a Panic Test , instead of Fleeing it is Shaken until the end of the next Player Turn. War Machines that fail a Break Test are automatically destroyed. War Machines on round bases and units Engaged in Combat with them cannot make Combat Reforms.\nWhen a unit Charges a War Machine on a round base, it can move into base contact by having its Front Facing contact any point of the War Machine’s base (it must still maximise the number of models in base contact, see “Contact between Objects”, page 11 and figure 31, page 68). No align move is allowed.\nWhen a unit Breaks from Combat and Flees away from a War Machine on a round base, always Pivot the Fleeing unit 180°, so that it’s Rear Facing is in contact with the War Machine’s base. Otherwise follow the normal rules for units Breaking from Combat and Fleeing.",
+        "hidden": false
+      },
+      {
+        "name": "War Platform",
+        "id": "ccef-5d47-fa0a-8bdf",
+        "description": "Unless selected as a mount for a Character, a model with War Platform gains Character with the following exceptions:\n• It does not count towards the Characters Army Category (for Army List creation).\n• It does not count as Character when Deploying Units (it may still be deployed inside units).\n• It cannot issue Duels, accept Duels, or Make Way.\n• It can perform Swirling Melee.\n• It does not count as Character regarding Bodyguard and Multiple Wounds, unless the War Platform is specifically mentioned in the Bodyguard rule.\n\nThe model can join units even if it has Towering Presence , and having Chariot does not prevent it from joining units without Chariot. Additionally, it does not prevent Characters without Chariot from joining a unit containing a model with War Platform and Chariot. When joined to a unit, it must always be placed in the centre of the first rank, possibly pushing back other models with Front Rank , and must keep its position in the centre of the first rank at all times, including during casualty removal (as long as it is joined to the unit). Should the model ever be forced to leave its position in the centre of the first rank, immediately redistribute models in the unit until the model is back in the centre of the first rank, following the priority order in 16.B.e Illegal Formation after Removing Models. If two positions are equally central (e.g. in a unit with an even number of models in the first rank and a War Platform replacing an uneven number of models per rank), the War Platform can be placed in either of these positions. If the War Platform cannot be placed in the centre of the the first rank, the model cannot join the unit. A War Platform with Mismatching Base can never join a unit, and only a single War Platform can be in the same unit unless specifically stated otherwise.",
+        "hidden": false
+      },
+      {
+        "name": "Wizard Conclave",
+        "id": "7455-f914-028b-3359",
+        "description": "The Champion of a unit with Wizard Conclave is a Wizard Adept and gains +1 Health Point in addition to the normal Attack Value increase associated with being a Champion. This Champion may select up to two spells from predetermined spells given in the unit entry. This overrides the Spell Selection rules for Wizard Adepts.",
+        "hidden": false
+      },
+      {
+        "name": "Cannot be Stomped",
+        "id": "0919-4c3c-87d8-78a8",
+        "description": "For the purposes of Stomp Attacks from enemy model, a model with Cannot be Stomped is never considered Standard Size.",
+        "hidden": false
+      },
+      {
+        "name": "Distracting",
+        "id": "056f-73ea-194b-1b49",
+        "description": "Close Combat Attacks allocated towards a model with Distracting suffer a -1 to-hit modifier. This to-hit modifier cannot be combined with any other negative to-hit modifiers.",
+        "hidden": false
+      },
+      {
+        "name": "Flammable",
+        "id": "5df5-1a68-27be-1ad6",
+        "description": "The attacks ignores Regeneration saves and must reroll failed to-wound rolls against models with Flammable.",
+        "hidden": false
+      },
+      {
+        "name": "Hard Target",
+        "id": "69d6-4d15-1fc4-13d3",
+        "description": "Shooting Attacks targeting a unit that has more than half of its models with Hard Target suffer a -1 to-hit modifier. This rule is cumulative, allowing an additional -1 to-hit modifier for each instance of Hard Target.",
+        "hidden": false
+      },
+      {
+        "name": "Parry",
+        "id": "b828-8719-4807-b047",
+        "description": "Parry can only be used against Close Combat Attacks from the Front Facing. The model gains +1 Defensive Skill, or its Defensive Skill is always equal to the Offensive Skill of the attacker, whichever is higher.",
+        "hidden": false
+      },
+      {
+        "name": "Fortitude",
+        "id": "faef-6f9d-ae02-d420",
+        "description": "Fortitude is a Special Save. Fortitude Saves cannot be taken against attacks with Lethal Strike that rolled a natural 6+ to wound, or against attacks with Flaming Attacks.",
+        "hidden": false
+      },
+      {
+        "name": "Aegis",
+        "id": "4966-e452-f252-6176",
+        "description": "Aegis is a Special Save. A model must reroll successful Aegis saves against attacks with Divine Attacks.",
+        "hidden": false
+      },
+      {
+        "name": "Accurate",
+        "id": "68aa-b60b-ae0b-158b",
+        "description": "The attack doesn't suffer the -1 to-hit modifier for shooting at Long Range.",
+        "hidden": false
+      },
+      {
+        "name": "Area Attack",
+        "id": "542e-121d-e448-b51e",
+        "description": "When the attack hits, determine the position of the attacker’s base:\n• In case of a Ranged Attack, determine which Arc of the target the attacker’s base is Located in.\n• In case of a Melee Attack, determine which Facing of the target the attacker is Engaged in.\n\nFront or Rear: Choose up to Y different ranks of the target.\nFlank: Choose up to Y different files of the target.\n\nFor each rank/file selected this way, the unit suffers X hits, to a maximum equal to the number of models in this rank/file. A single Area Attack can never cause more hits than there are models in the unit.\n\nSome Area Attacks have a higher Strength, Armour Penetration, and/or additional Attack Attributes stated in square brackets (e.g. Strength 3 [7], Armour Penetration 0 [4], [Multiple Wounds (D3) ]). If so, a single hit from this attack, chosen by the attacker (following the normal rules for Distributing Hits ), uses the Strength, Armour Penetration, and Attack Attributes in brackets. The bracketed values and Attack Attributes are not applied to any other hits.",
+        "hidden": false
+      },
+      {
+        "name": "Crush Attack",
+        "id": "9371-5924-2a39-1652",
+        "description": "At the end of step 4 of the Round of Combat Sequence (just after issuing and accepting Duels), the model part may declare that it will use its Crush Attack this Round of Combat. It performs a single Close Combat Attack at Initiative Step 0, with Strength 10, Armour Penetration 10 (regardless of the user’s Agility, Strength, and Armour Penetration), and Multiple Wounds (D3+1). The following restrictions apply to Crush Attacks:\n\n• They cannot be made as Supporting Attacks .\n• They never benefit from any weapons or other Attack Attributes the model part may have.\n• The model part cannot make any other Close Combat Attacks during this Round of Combat (including other Crush Attacks, but can still use its Special Attacks such as Stomp Attacks or Impact Hits).",
+        "hidden": false
+      },
+      {"name": "Divine Attacks", "id": "030a-8283-3ebb-93f1", "description": "Successful Aegis Saves taken against the attack must be rerolled .", "hidden": false},
+      {
+        "name": "Fight in Extra Rank",
+        "id": "f07b-fa49-1de5-8a2b",
+        "description": "Model parts with Fight in Extra Rank, or using a Weapon with Fight in Extra Rank, can make Supporting Attacks from an additional Rank (normally, this means that models with Fight in Extra Rank will be able to make Supporting Attacks from the third rank). This rule is cumulative, allowing an additional rank to make Supporting Attacks for each instance of Fight in Extra Rank.",
+        "hidden": false
+      },
+      {
+        "name": "Flaming Attacks",
+        "id": "49e5-2d9a-1ecc-101f",
+        "description": "The attack ignores Fortitude Saves and must reroll failed to-wound rolls against models with Flammable.",
+        "hidden": false
+      },
+      {
+        "name": "Hatred",
+        "id": "13c5-ce89-60ad-c572",
+        "description": "During the first Round of Combat, failed to-hit rolls from attacks with Hatred must be rerolled.",
+        "hidden": false
+      },
+      {
+        "name": "Battle Focus",
+        "id": "cc29-65f2-796b-52e2",
+        "description": "If the attack hits with a natural to-hit roll of ‘6’, the attack causes one additional hit (i.e. usually two hits instead of one).",
+        "hidden": false
+      },
+      {
+        "name": "Lethal Strike",
+        "id": "f433-7645-0332-97a4",
+        "description": "An attack with Lethal Strike that wounds with a natural to-wound roll of ‘6’ has its Armour Penetration set to 10 and ignores Fortitude saves.",
+        "hidden": false
+      },
+      {
+        "name": "Lightning Reflexes",
+        "id": "f17a-c7f9-af34-a039",
+        "description": "A Close Combat Attack with Lightning Reflexes gains a +1 to-hit modifier. Model parts with this Attack Attribute wielding Great Weapons do not gain this +1 to-hit modifier, but strike with the Great Weapon at the Initiative Step corresponding to their Agility instead of always striking at Initiative Step 0.",
+        "hidden": false
+      },
+      {
+        "name": "Magical Attacks",
+        "id": "97c6-651e-d93d-a61e",
+        "description": "The Attack Attribute doesn’t confer any additional effects. However, the Attack Attribute interacts with other rules, such as Aegis (X, against Magical Attacks).",
+        "hidden": false
+      },
+      {
+        "name": "Move or Fire",
+        "id": "6475-e063-0070-f6cc",
+        "description": "The attack may not be used if the attacking model has made an Advance Move, March Move, Random Movement, Reform, or Pivot during the current Player Turn. Note that the normal limitations still apply (e.g. no shooting after a Failed Charge Move ).",
+        "hidden": false
+      },
+      {
+        "name": "Multiple Wounds",
+        "id": "2ea2-3a42-de1e-bc0a",
+        "description": "Unsaved wounds caused by the attacks are multiplied into the value given in brackets (X). If the value is a dice (e.g. Multiple Wounds (D3)), roll one dice for each unsaved wound with Multiple Wounds. The amount of wounds that the attack is multiplied into can never be higher than the Health Points Characteristic of the target (excluding Health Points lost previously in the battle).\n\nFor example, if a Multiple Wounds (D6) attack wounds a unit of Trolls (HP 3) and rolls a ‘5' for the multiplier, the number of unsaved wounds is reduced to 3, even if the Troll unit has already lost one or two Health Points previously in battle .\n\nIf Clipped Wings is stated after the X value in brackets, any unsaved wound caused by the attack against a model with Fly is multiplied into X+1 instead of X.",
+        "hidden": false
+      },
+      {
+        "name": "Penetrating",
+        "id": "64e2-a7c4-41ba-fbf9",
+        "description": "When the attack hits, check in which Arc of the target half or more of the attacker’s base is in (randomise in case of a tie). The attack causes a number of hits equal to the number of ranks of its target if the attacker is in the Front or the Rear Arc, or a number hits equal to the number of files of its target if the attacker is in either Flank Arc. In either case, the number of affected ranks or files cannot exceed 5, and no model can suffer more than one hit from a single attack with Penetrating.\nSome Penetrating attacks have a higher Strength and/or additional Attack Attributes stated in square brackets (e.g. Strength 3 [6], [Multiple Wounds (D3)]). If so, a single hit from this attack, chosen by the attacker, uses the Strength value and Attack Attributes in brackets. The bracketed values and Attack Attributes are not applied to any other hits.",
+        "hidden": false
+      },
+      {
+        "name": "Poison Attacks",
+        "id": "f2fe-a751-2161-8c76",
+        "description": "If the attack successfully hits with a natural to-hit roll of ‘6’, it automatically wounds with no to-wound roll needed.\n\nShooting Attacks using the Hopeless Shot can only automatically wound if the first to-hit roll is a natural ‘6’. Note that the second to-hit roll must still be successful in order to hit the target.\n\nIf the Attack can be turned into more than one hit (e.g. a hit with Penetrating, Area Attack or Battle Focus), only a single hit, chosen by the attacker, automatically wounds. All other hits must roll to wound as normal.",
+        "hidden": false
+      },
+      {
+        "name": "Quick to Fire",
+        "id": "5a08-d3bf-06f9-3034",
+        "description": "The attack doesn't suffer the -1 to-hit modifier for Moving and Shooting.",
+        "hidden": false
+      },
+      {"name": "Reload!", "id": "1b31-4a58-d332-33f2", "description": "The attack cannot be used for a Stand and Shoot Charge Reaction.", "hidden": false},
+      {
+        "name": "Harnessed",
+        "id": "3d09-e862-b7b5-fc26",
+        "description": "Model parts with Harnessed cannot make Supporting Attacks and cannot use Weapons. Shooting Weapons carried by model parts with Harnessed can be used by other model parts of the same model (as long as they do not have Harnessed or Inanimate). A model with with at least one model part with Harnessed is considered to be mounted.",
+        "hidden": false
+      },
+      {
+        "name": "Inanimate",
+        "id": "ca83-2dad-d908-5f4c",
+        "description": "Model parts with Inanimate cannot make Close Combat Attacks and cannot use Shooting Weapons. Shooting Weapons carried by model parts with Inanimate can be used by other model parts of the same model (and do not have Restraints or Inanimate).",
+        "hidden": false
+      },
+      {
+        "name": "Devastating Charge",
+        "id": "c66c-e69e-a4f1-0351",
+        "description": "A Charging model part with Devastating Charge, or using a weapon with Devastating Charge, gains the Model Rules and Characteristic modifiers stated in brackets.\n\nFor example, a model part with Devastating Charge (+1 Strength, Poison Attacks) gains +1 Strength and Poison Attacks when it is Charging.\n\nRemember that Special Attacks cannot be affected by Attack Attributes, so the Model Rules and Characteristic modifiers gained from Devastating Charge are not applied to Special Attacks, like Impact Hits and Stomp Attacks, unless specifically stated otherwise.\n\nThis rule is cumulative: a model part with several instances of Devastating Charge applies all Attack Attributes and Characteristic modifiers from all of them when Charging.",
+        "hidden": false
+      },
+      {
+        "name": "Toxic Attacks",
+        "id": "3472-76a4-0c76-5d27",
+        "description": "The attack has its Strength always set to 3 and its Armour Penetration always set to 10.",
+        "hidden": false
+      },
+      {
+        "name": "Unwieldy",
+        "id": "c545-6ef2-4618-4d0f",
+        "description": "The attack suffers an additional -1 to-hit modifier for Moving and Shooting (for a total of -2). When combined with Quick to Fire, the attack can only ignore the normal -1 to-hit modifier from Moving and Shooting, not the additional -1 to-hit modifier from Unwieldy.",
+        "hidden": false
+      },
+      {
+        "name": "Volley Fire",
+        "id": "1582-2a6f-e73c-889c",
+        "description": "If at least one model in a unit can draw Line of Sight to the target, then all model parts using Volley Fire in the same unit ignore all intervening models of their own size or smaller for Line of Sight and Cover purposes.\nIn addition, unless making a Stand and Shoot Charge Reaction, models in a unit in Line Formation that has not moved during this Player Turn may shoot from one additional rank (usually this means that they can shoot from the first three ranks).",
+        "hidden": false
+      },
+      {
+        "name": "Weapon Master",
+        "id": "a9a1-31b4-37a3-4138",
+        "description": "At the beginning of each Round of Combat, model parts with Weapon Master may choose which weapon they fight with. This includes selecting to use a Hand Weapon even if they have other weapons. If armed with a weapon with a Weapon Enchantment , the model part must still use it.",
+        "hidden": false
+      },
+      {
+        "name": "Breath Attack",
+        "id": "3be7-d693-e8e8-6b1e",
+        "description": "A model part with Breath Attack can use it only once during the game. If a model has more than one Breath Attack, it can only use one Breath Attack in a single phase. It can be used either as a Shooting Attack or as a Special Attack when Engaged in Combat.\n\n• As a Shooting Attack with March and Shoot: choose a target using the normal rules for Shooting Attacks (it can be used for a Stand and Shoot Charge Reaction). The attack has a range of 6′′. A model part with both a Breath Attack and a Shooting Weapon can use both in the same Shooting Phase, however only against the same target.\n• As a Special Attack when Engaged in Combat: the attack is made at the model part’s Agility. Declare that you are using the Breath Attack at the start of the Initiative Step (before rolling to hit), and choose a unit in base contact as a target.\n\nNo matter if it is used as a Shooting or Melee Attack, the target of the Breath Attack suffers 2D6 hits. The Strength, Armour Penetration, and Attack Attributes (if any) of these hits are given within brackets, such as in Breath Attack (Str 4, AP 1, Flaming Attacks ). If several models in the same unit have this Special Attack, roll for the number of hits separately for each model.",
+        "hidden": false
+      },
+      {
+        "name": "Grind Attacks",
+        "id": "1728-908f-7383-29d6",
+        "description": "A model part with Grind Attacks resolves these attacks at its Agility. It must choose an enemy unit in base contact with it. The chosen enemy unit suffers a number of hits equal to the value stated in brackets (X). These hits are resolved with the model part’s Strength and Armour Penetration.\n\nIf a model has both Grind Attacks and Impact Hits, it may only use one of these rules in the same Round of Combat (the owner may choose which). If several model parts in a unit have Grind Attacks and if X is a random number (e.g. Grind Attacks (2D3)), roll for the number of hits separately for each model part.",
+        "hidden": false
+      },
+      {
+        "name": "Impact Hits",
+        "id": "197f-58cf-73ad-ac42",
+        "description": "At Initiative Step 10, a Charging model part with Impact Hits must choose an enemy unit that is in base contact with the attacking model's Front Facing. This unit suffers a number of hits equal to the value stated in brackets (X). These hits are resolved with the attacking model part's Strength and Armour Penetration.\n\nIf a model has both Grind Attacks and Impact Hits, it may only use one of these rules in the same Round of Combat (its controlling player may choose which). In multipart models, only model parts that also have Restraints or Inanimate can use their Impact Hits. When several models in the same unit have Impact Hits, and when X is a random number (e.g. Impact Hits (D6)), roll for the number of hits separately for each model part.",
+        "hidden": false
+      },
+      {
+        "name": "Stomp Attacks",
+        "id": "4810-6726-807b-e78e",
+        "description": "At Initiative Step 0 a model part with Stomp Attacks must choose an enemy model of Standard Size in base contact with it. The chosen model’s unit suffers a number of hits equal to the value stated in brackets (X). These hits can only be distributed onto models of Standard Size (ignore models of a different Size when distributing hits). They are resolved with the model part’s own Strength and Armour Penetration.\n\nIn multipart models, only model parts that also have Restraints can use Stomp Attacks. When several models in the same unit have this Special Attack, and when X is a random number (e.g. Stomp Attacks (D6)), roll for the number of hits separately.",
+        "hidden": false
+      },
+      {
+        "name": "Sweeping Attack",
+        "id": "3fff-f85c-3747-6634",
+        "description": "This attack may be used by units consisting of models with Sweeping Attack. When the unit Advance Moves or March Moves, you may nominate a single unengaged enemy unit that the unit with Sweeping Attack moved through or over during this move (meaning their Bases were Overlapping, even partially). The whole unit makes the Sweeping Attack against the nominated enemy unit, which is resolved when the March or Advance Move is completed. Follow the description in the unit profile. These attacks hit automatically and count as Ranged Attacks. When a model performs a Sweeping At tack, the distance moved is counted from its starting position to the point on the Battlefield where it performed the attack, and then to its final position. Each Sweeping Attack can only be performed once per Player Turn.",
+        "hidden": false
+      },
+      {
+        "name": "March and Shoot",
+        "id": "f166-e6b4-13de-aa22",
+        "description": "March Moving in the same Player Turn does not prevent the attack from being performed, unless the attack is also subject to Move or Fire.",
+        "hidden": false
+      },
+      {
+        "name": "Two-Handed",
+        "id": "b248-945b-ab64-5bb3",
+        "description": "A model using a weapon with Two-Handed cannot simultaneously use a Shield against Melee Attacks.",
+        "hidden": false
+      },
+      {
+        "name": "Matching Bases",
+        "id": "721f-164e-89e1-57a7",
+        "description": "In Combined Units containing Characters and R&F models, a Character is considered to have a Matching Base if:\n• The model has the same base size as the R&F models.\n• The model’s base is the same size as a multiple of the R&F models’ bases (such as a 40×40 mm base in a 20×20 mm unit).\n\nFor Combined Units consisting entirely of Characters, Matching Bases are determined differently as these units do not contain any R&F models. The R&F base size for the purposes of Matching Bases must:\n\n• Correspond to the base size of at least one of the Characters\n• Result in as few Characters as possible having Mismatching Bases; the owner chooses in case of a tie\n\nFor example, in a unit consisting of a 25×25mm Character and two 25×50mm Characters, that base size is 25×25mm, as it does not result in any Mismatching Bases in the unit.\n\nIf the first rank is occupied by models with Front Rank, a model with Matching Base is placed in the second rank instead. If this rank is also occupied by models with Front Rank, it is placed in the third rank, and so on. Matching Bases are subject to the following rules and restrictions:\n\n• If the model has a larger base than the R&F models, it is considered to be in all ranks its base occupies for the purposes of calculating Full Ranks . For calculating the number of models in the unit’s ranks (e.g. for Full Ranks, Line Formation , Area Attack ), the large base counts as the number of models it replaces.\n• If a model with a Matching Base has a longer base than the R&F models in the unit, the unit is allowed to have more than one incomplete rank if all incomplete ranks after the first consist entirely of models with such bases (for instance the rear parts of long bases such as War Platforms are allowed to form several incomplete ranks).\n• A model cannot join a unit that has more than one rank if its base is wider than the unit it wishes to join, nor can a unit Reform into a formation that is narrower than any model joined to the unit.",
+        "hidden": false
+      },
+      {
+        "name": "Swift Reform",
+        "id": "246c-9d3a-5c5b-501a",
+        "description": "During the Movement Phase, a unit containing one or more models with Swift Reform may execute a Swift Reform instead of a Reform. The unit makes a Reform with the following exceptions:\n• The unit is not prohibited from shooting in the next Shooting Phase (but will still suffer the to-hit modifier for moving and shooting).\n• The unit can perform an Advance Move after the Reform. For the purpose of no model being able to end its movement with its centre farther away than its Advance Rate from its starting position, measure this distance after the Reform.\n• No model can end its movement (after an Advance Move) with its centre farther away than its March Rate from its starting position before the Reform.",
+        "hidden": false
+      },
+      {
+        "name": "Steady Aim",
+        "id": "7892-bac3-7fb7-b4db",
+        "description": "Steady Aim – Shooting\nThe model does not suffer the −1 to-hit modifier for Stand and Shoot Charge Reactions.",
+        "hidden": false
+      },
+      {
+        "name": "Shoot in Extra Rank",
+        "id": "4875-9189-0a8c-bfa0",
+        "description": "The model part may use Shooting Attacks from one additional rank (normally, this means that models with Shoot in Extra Rank will be able to make Shooting Attacks from the third rank).",
+        "hidden": false
+      },
+      {
+        "name": "Rage",
+        "id": "8be7-9332-4733-a07f",
+        "description": "Whenever the model loses a Health Point, it gains +1 Attack Value. Whenever it gains a Health Point, it suffers −1 Attack Value.",
+        "hidden": false
+      },
+      {
+        "name": "Extra Support",
+        "id": "4d95-b8a4-cad9-c07e",
+        "description": "The model part ignores the general Attack Value modifier for Supporting Attacks, but its Attack Value is never higher than the value stated in brackets (X) while performing Supporting Attacks.",
+        "hidden": false
+      },
+      {
+        "name": "Immune",
+        "id": "c030-b79a-25d6-989f",
+        "description": "Attacks with the Attack Attributes stated in brackets (X) allocated towards or distributed onto the model lose these Attack Attributes.",
+        "hidden": false
+      },
+      {
+        "name": "Special Ambush",
+        "id": "01fd-1523-71ed-cd50",
+        "description": "The model follows the rules for Ambush with the following exception: When its unit enters the Battlefield, apply the following rules instead of placing it using the normal Ambush rules:\n1. Choose a point that meets the conditions specified in brackets (X).\n2. Place the unit in contact with and fully within 6′′ of the chosen point. The unit can be placed in any formation but must follow the Unit Spacing rule. If the unit cannot be placed according to these rules, it cannot enter the Battlefield during this Player Turn.\n3. The unit loses Scoring until the end of the Movement Phase.\n4. The unit counts as having performed a March Move in this Player Turn for the purpose of shooting.\nRoll again in the next friendly Player Turn.",
+        "hidden": false
+      },
+      {
+        "name": "Hold the Line",
+        "id": "3370-e237-1ea9-5a02",
+        "description": "Friendly units within 6′′ of a non-Fleeing unit containing one or more models with Hold the Line must reroll failed Panic Tests.",
+        "hidden": false
+      },
+      {
+        "name": "Hidden",
+        "id": "b371-05d1-597f-494f",
+        "description": "The model cannot be deployed during the Deployment Phase. Instead, at the start of any Player Turn, the owner may choose a friendly unit that meets all the following conditions:\n• The model with Hidden could have joined it normally.\n• It has the same Type and Height as the model with Hidden.\n• It is not Fleeing nor a Summoned unit.\n\nThen apply the following procedure:\n• Remove a R&F model with the same base size as the model with Hidden from the chosen unit’s first rank as a casualty. You cannot remove the last R&F model from a unit, and removing the model never causes a Panic Test.\n• Deploy the model with Hidden in the position of the removed model.\n• The model with Hidden cannot voluntarily leave its unit during the Player Turn in which it was deployed.\n• If the model is not deployed by the end of Game Turn 4, it counts as a casualty and cannot be deployed for the rest of the game.",
+        "hidden": false
+      },
+      {
+        "name": "Exclusive",
+        "id": "6034-690b-2c59-a7fa",
+        "description": "Characters with Exclusive (X) can only join units that contain at least one model with (X), and units consisting entirely of models with Exclusive (X) can only be joined by models with (X), where X specifies certain unit names, Model Rules, or upgrades. Models with Exclusive without any brackets can never join units or be joined by other models.",
+        "hidden": false
+      },
+      {
+        "name": "Deafening Clamour",
+        "id": "3eec-762d-c938-144b",
+        "description": "The model is a Musician. The range of the model’s March to the Beat, and to enemy units that are required to take a March Test due to the model’s unit, are both extended to 18′′.",
+        "hidden": false
+      },
+      {
+        "name": "Attached",
+        "id": "c44f-d7ea-b42a-edac",
+        "description": "The model must be deployed in a unit. The model can never voluntarily leave its unit.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Light Armour",
+        "id": "dd27-6738-aebc-192e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c162-a646-5acd-5058",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Heavy Armour",
+        "id": "c015-e52d-3852-27ea",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f485-3ff7-1641-4829",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Plate Armour",
+        "id": "f49b-1010-24f1-f23b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "faa0-e44c-e408-c61f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Shield",
+        "id": "ff97-a295-86c8-76d5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d158-aeff-6968-2615",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spear",
+        "id": "e79a-e00b-b0ee-6850",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8a37-3686-46d8-6eb0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Paired Weapons",
+        "id": "6a41-63a5-c5f6-66f6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "236a-7e57-0706-fc14",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Lance",
+        "id": "b10f-350c-0581-f9c2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2ff1-d7f1-dfdc-8762",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Crossbow",
+        "id": "8dad-9602-9dd1-7698",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "dece-abfb-1646-28f2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Bow",
+        "id": "e2c0-2230-5a1a-1f08",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4382-0938-eb2f-87d2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Great Weapon",
+        "id": "2837-ec0d-956f-690a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c73d-37e8-2340-287d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Halberd",
+        "id": "544f-9331-9cce-694d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b311-493d-9678-8b90",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Longbow",
+        "id": "cc20-7463-8302-21b4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cb60-f5ed-2fc9-4921",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Pistol",
+        "id": "bdc6-e116-53be-d2ae",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f540-01da-46f0-6811",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Throwing Weapons",
+        "id": "b672-9729-1d95-cb6d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e829-ad61-66b7-5b70",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Light Lance",
+        "id": "7efd-252a-dcad-fa35",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b7cd-87e0-ef2f-540a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Binding Scroll",
+        "id": "3f7d-5a54-b1ca-550f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4f02-3f8e-7013-7cb4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          },
+          {
+            "id": "0533-e602-37d0-79cd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 65}]
+      },
+      {
+        "name": "Crown of Autocracy (not with Not A Leader)",
+        "id": "f996-0dd2-7d1f-17fe",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4163-e9f4-70b3-775a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "10ee-597b-7691-dc42",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}]
+      },
+      {
+        "name": "Crown of the Wizard King",
+        "id": "28c9-d1c6-a0c8-d695",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1828-5940-a898-08ac",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "7520-60ab-8f28-6061",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "°Crystal Ball",
+        "id": "ef67-0a29-6d5c-687c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "89dc-15b7-96ab-ea9f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "2893-a2ca-9621-f623",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 45}]
+      },
+      {
+        "name": "Dragon Staff",
+        "id": "b996-d7ae-e854-2601",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cf4d-573e-5b14-f5df",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "bbd3-3550-c358-b9e9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+      },
+      {
+        "name": "Dragonfire Gem",
+        "id": "57fe-c8e7-f786-132c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0cc1-fa28-1661-956f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "8d77-0788-23ea-166c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+      },
+      {
+        "name": "Lightning Vambraces",
+        "id": "3d77-9d65-58c3-9e7d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0111-aed8-93df-9973",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "b190-6df3-1803-f935",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+      },
+      {
+        "name": "Lucky Charm",
+        "id": "ebd9-2cee-402a-4ff4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d5c0-6e49-2bc3-cab3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f5c6-2684-9a12-e8c2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      },
+      {
+        "name": "Obsidian Rock",
+        "id": "717c-cdd1-f368-649a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3df8-0966-ed17-ee75",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "c67b-4d65-7959-fcad",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}]
+      },
+      {
+        "name": "Potion of Strength",
+        "id": "589f-da5c-20ba-5f1a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "fb32-3b95-1e6c-9a05",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "9bac-fc91-af4b-e93d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      },
+      {
+        "name": "Potion of Swiftness",
+        "id": "fc3e-7023-b3ce-8579",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "579c-0a47-7f43-2f98",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1b81-fea2-1f62-ddf9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+      },
+      {
+        "name": "Ranger's Boots",
+        "id": "538d-5665-58a8-281d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1ffa-67cd-68eb-1267",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "ab93-3140-445c-9de6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}]
+      },
+      {
+        "name": "Rod of Battle",
+        "id": "2078-81dc-eac0-b856",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4632-77ba-878a-d216",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0b86-31b2-574f-645e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Scepter of Power",
+        "id": "52aa-545b-5fc8-64fe",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5967-7f82-f3fb-1325",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "19eb-8b4c-d707-8268",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "Talisman of Shielding",
+        "id": "8cca-6eee-ecd5-1620",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c4d9-6201-993c-7c61",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "8fda-8f2c-9c0f-c4d5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Talisman of the Void",
+        "id": "bc10-9582-1642-6f0e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4093-7621-0d1b-0dfa",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f56f-401d-a2b5-14a1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "°Book of Arcane Mastery (not on Wizard Master)",
+        "id": "02ee-20af-e439-e56f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d9d0-13ea-3f62-0d61",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "fd14-0482-e23a-ef29",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Essence of a Free Mind",
+        "id": "3db5-8d52-cfe9-fbfa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "73b8-f867-8841-bdf9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f865-a3c5-c1c3-e973",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "°Magical Heirloom",
+        "id": "1a15-8ac5-586b-1b94",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "09fb-61bf-d2b2-eb15",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "a514-8cb4-1139-9905",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Aether Icon",
+        "id": "8a96-40ff-7fb6-54a0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e301-4817-97c9-61ee",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          },
+          {
+            "id": "3290-f93c-4203-1ed8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      },
+      {
+        "name": "Banner of Discipline",
+        "id": "bd1e-b521-5357-bc0e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a2e6-5898-c18e-073d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0f3d-dc64-2d8e-fea1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 25}]
+      },
+      {
+        "name": "Banner of Speed",
+        "id": "c253-ce04-6c42-8bf6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b8ec-88fe-1802-034c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "d519-ce01-461a-a9f0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Banner of the Relentless Company",
+        "id": "6454-0e64-e88b-0afa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "65fc-77a6-bc7d-708b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          },
+          {
+            "id": "18d3-e6b2-9af0-18e2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "Flaming Standard",
+        "id": "58a9-c83f-8819-4bfa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5ac7-02ae-0ab4-ee85",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          },
+          {
+            "id": "7194-2105-0fb1-913d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "Legion Standard",
+        "id": "e2f6-29ee-8b26-9f6e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0554-097b-043f-0296",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          },
+          {
+            "id": "a5f4-90b2-83e6-606e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      },
+      {
+        "name": "Stalker's Standard",
+        "id": "1339-adda-070d-906c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d603-9133-33a0-7df8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1ae1-5497-4f16-c5b7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Alchemist's Alloy",
+        "id": "98fe-a333-8a21-dcb0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "fe44-8d00-aa93-3344",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "22bb-70bd-571d-6017",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+      },
+      {
+        "name": "Basalt Infusion",
+        "id": "5348-8c71-c793-57f3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a676-50d6-34dd-4c20",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "5490-f0a4-8106-e9b5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "Death Cheater",
+        "id": "cba2-e616-5486-217b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "680d-7f06-0c0a-06c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "472d-0bff-19ad-b513",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 90}]
+      },
+      {
+        "name": "Destiny's Call",
+        "id": "b8a1-4182-3aba-ffd8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7d9e-0dd9-9c03-22c9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "441f-cdc3-2641-5eb4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 70}]
+      },
+      {
+        "name": "Essence of Mithril",
+        "id": "47b1-c334-2935-e4f4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d8a8-87ba-b529-c97d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "567d-e1e4-0a5d-1bbc",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Ghostly Guard",
+        "id": "08dd-2bd2-1e5a-1f39",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "148f-f6ba-c045-3317",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "ee96-f598-71db-f5e8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}]
+      },
+      {
+        "name": "Dusk Forged",
+        "id": "97f7-20ef-fc6c-63a7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "93db-9a6d-1119-f5c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "d8fb-29d0-debc-809d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 55}]
+      },
+      {
+        "name": "Willow's Ward",
+        "id": "41fe-d2cc-82ef-381a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "213f-7fe0-7bf6-4d56",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "a232-f363-a538-7798",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+      },
+      {
+        "name": "Wizard Apprentice",
+        "id": "9dfd-528a-2991-3f75",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "98e7-37b2-b6a7-13ce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Wizard Adept",
+        "id": "6d2e-3a7c-b8c4-2589",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1c80-09df-b71b-762a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Wizard Master",
+        "id": "e7ab-249b-e180-109d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ecac-fac9-9f47-edc2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Unarmoured",
+        "id": "3d08-4e50-5ccc-bda0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3568-f94a-3055-aa50",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Handgun",
+        "id": "aa9c-bdad-7fe7-36a3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2cee-06b2-0fb3-9855",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Army General",
+        "id": "d664-b973-594c-5971",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9e95-5927-c752-12ce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "318b-239e-60fa-42ef",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0da0-7281-e219-4475",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Battle Standard Bearer",
+        "id": "1816-6a9c-7e82-694a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2602-ba16-b629-3cf5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "051e-eed8-4d48-2248",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Hand Weapon",
+        "id": "d5a4-4049-60de-5914",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "eab6-c8da-2be4-d5ca",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Musician",
+        "id": "10fe-ce12-d662-ae02",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9968-adaf-9cb5-9219",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      },
+      {
+        "name": "Standard Bearer",
+        "id": "8f82-6955-3d8a-01ea",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1e07-8da4-71e3-21bd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      },
+      {
+        "name": "Champion",
+        "id": "c3e7-8c28-0d42-6aa8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "efef-cedc-706d-0c46",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Weapon Enchantments",
+        "id": "f853-d3c3-4165-d5ab",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "c2f2-85bc-ce11-c49d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Eldritch Inscriptions",
+            "id": "311e-5a0b-83f2-9069",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "9369-51e8-a408-1876",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "c5ae-726c-f925-b6b3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+          },
+          {
+            "name": "King Slayer",
+            "id": "3eeb-4d3a-ca9b-17e5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "3f07-c141-0acb-6f38",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "6056-7200-eae6-1b0a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+          },
+          {
+            "name": "Shield Breaker",
+            "id": "51f1-66e8-4022-9d8b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "44af-7e51-e210-1f4a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "bd3d-4ce1-4c98-08d4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+          },
+          {
+            "name": "Hero's Heart",
+            "id": "eedf-4585-d0c1-f613",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "5942-d176-8677-4fd2",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "e9c8-cacb-f16c-ea7f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+          },
+          {
+            "name": "Supernatural Dexterity",
+            "id": "dd35-7a49-6952-982e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "24dd-3eb3-0842-70c8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "3957-a352-00de-cdb4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+          },
+          {
+            "name": "Cleansing Light",
+            "id": "81c6-6663-7fd4-18f7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "6425-23f8-e630-3237",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "7f1d-9ac8-6dfe-3129",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 25}]
+          },
+          {
+            "name": "Touch of Greatness",
+            "id": "49a2-989e-42c3-ee8b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "9015-f957-ad0c-4c41",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "cbb2-50ed-3eb7-f94e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 45}]
+          }
+        ]
+      },
+      {
+        "name": "Command Group",
+        "id": "b4c3-e840-1bd5-b746",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Champion",
+            "id": "4fb4-c9a2-fa29-d2af",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c3e7-8c28-0d42-6aa8",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Standard Bearer",
+            "id": "707a-8897-5a0d-a04c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8f82-6955-3d8a-01ea",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Musician",
+            "id": "7e9e-ad84-4aa7-020a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "10fe-ce12-d662-ae02",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Shield Enchantments",
+        "id": "3ca8-d93a-232c-d3b5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "a2c1-9afa-9cd4-c449",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Willow's Ward (only on Foot)",
+            "id": "a527-0e68-b768-0605",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "41fe-d2cc-82ef-381a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Dusk Forged",
+            "id": "8f6b-f430-a99d-3f55",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "97f7-20ef-fc6c-63a7",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Armour Enchantments",
+        "id": "74ad-3e59-5174-60fa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "7bf2-549c-6ff1-924f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Ghostly Guard",
+            "id": "a49f-7ced-15b0-6f93",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "08dd-2bd2-1e5a-1f39",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Death Cheater",
+            "id": "4fd0-f307-0c59-29ee",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "cba2-e616-5486-217b",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Destiny's Call (only on Standard)",
+            "id": "0c22-f5d2-8ec4-32d6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b8a1-4182-3aba-ffd8",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Alchemist's Alloy",
+            "id": "8f1f-af40-4d07-36dc",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "98fe-a333-8a21-dcb0",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Essence of Mithril (only on Standard)",
+            "id": "e4b5-8e70-ea45-e148",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "47b1-c334-2935-e4f4",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Basalt Infusion",
+            "id": "047f-7951-775b-18cf",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "5348-8c71-c793-57f3",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Artefacts (Wizards)",
+        "id": "ab25-3916-e8af-98cb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "c9f3-ddeb-b459-fd84",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Binding Scroll",
+            "id": "f855-25f0-1af9-28bd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3f7d-5a54-b1ca-550f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Crystal Ball",
+            "id": "c6ce-2fd6-5c78-614b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ef67-0a29-6d5c-687c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Crown of Autocracy",
+            "id": "c240-9717-2327-5664",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f996-0dd2-7d1f-17fe",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Dragon Staff",
+            "id": "1997-2b6d-0cc0-51b6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b996-d7ae-e854-2601",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Dragonfire Gem",
+            "id": "4bed-fd99-bde0-fb34",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "57fe-c8e7-f786-132c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Lucky Charm",
+            "id": "d25d-4963-04f5-d40a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ebd9-2cee-402a-4ff4",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Lightning Vambraces",
+            "id": "9c52-685a-ea1f-851b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3d77-9d65-58c3-9e7d",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Obsidian Rock",
+            "id": "e5b3-c6fd-9f9c-e5f5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "717c-cdd1-f368-649a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Potion of Strength (not on Towering Presence)",
+            "id": "04b1-0131-0954-3657",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "589f-da5c-20ba-5f1a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Potion of Swiftness",
+            "id": "e018-9964-afdf-9bc1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "fc3e-7023-b3ce-8579",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Ranger's Boots (only on Standard and Foot)",
+            "id": "374d-13e0-e992-65c1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "538d-5665-58a8-281d",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rod of Battle",
+            "id": "9c96-9af8-4a32-0a6c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2078-81dc-eac0-b856",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Scepter of Power",
+            "id": "c99f-7a35-cf73-7091",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "52aa-545b-5fc8-64fe",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Talisman of Shielding",
+            "id": "855c-aa12-d776-3c72",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8cca-6eee-ecd5-1620",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Talisman of the Void",
+            "id": "a61e-39d9-adad-c6d4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bc10-9582-1642-6f0e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "°Book of Arcane Mastery (not on Wizard Master)",
+            "id": "528f-bdd2-7b6e-dad2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "02ee-20af-e439-e56f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "°Essence of a Free Mind (only on Wizard)",
+            "id": "c548-93ab-2b61-8dd5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3db5-8d52-cfe9-fbfa",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "°Magical Heirloom (only on Wizard)",
+            "id": "c878-11af-72e0-9412",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1a15-8ac5-586b-1b94",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Artefacts (non-Wizards)",
+        "id": "6e26-c5df-c19e-83d4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "4658-33b0-7815-0832",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Binding Scroll",
+            "id": "52ab-e17a-06e6-21aa",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3f7d-5a54-b1ca-550f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Crystal Ball",
+            "id": "0f68-9471-ae81-25d4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ef67-0a29-6d5c-687c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Crown of Autocracy",
+            "id": "38b9-dae1-95af-302d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f996-0dd2-7d1f-17fe",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Crown of the Wizard King (not on Wizards)",
+            "id": "17f0-336d-10ca-7207",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "28c9-d1c6-a0c8-d695",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Dragon Staff",
+            "id": "84a2-6c9c-d927-2874",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b996-d7ae-e854-2601",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Dragonfire Gem",
+            "id": "c86d-2524-de8b-a975",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "57fe-c8e7-f786-132c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Lucky Charm",
+            "id": "e66e-7a88-71b6-bf51",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ebd9-2cee-402a-4ff4",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Lightning Vambraces",
+            "id": "992d-fc17-1169-86f2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3d77-9d65-58c3-9e7d",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Obsidian Rock",
+            "id": "9f4f-62ff-d10a-ed99",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "717c-cdd1-f368-649a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Potion of Strength (not on Towering Presence)",
+            "id": "a0e5-90bf-7371-4098",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "589f-da5c-20ba-5f1a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Potion of Swiftness",
+            "id": "50f0-12d3-23a7-a020",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "fc3e-7023-b3ce-8579",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Ranger's Boots (only on Standard and Foot)",
+            "id": "3118-3fe0-8ace-7a01",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "538d-5665-58a8-281d",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rod of Battle",
+            "id": "0c97-c012-9c3d-fb71",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2078-81dc-eac0-b856",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Scepter of Power",
+            "id": "6367-79f1-3140-ff39",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "52aa-545b-5fc8-64fe",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Talisman of Shielding",
+            "id": "6451-e6e5-bb4e-c8ab",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8cca-6eee-ecd5-1620",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Talisman of the Void",
+            "id": "0b0c-697c-57fe-998b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bc10-9582-1642-6f0e",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Banner Enchantments (BSB)",
+        "id": "6f44-7811-b1d1-1d86",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "0a59-9bfc-d3ed-891d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Aether Icon",
+            "id": "0198-6415-6613-85e5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8a96-40ff-7fb6-54a0",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner of Discipline",
+            "id": "df6b-d277-de58-63c7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bd1e-b521-5357-bc0e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner of Speed",
+            "id": "d4a1-a7e4-c789-6347",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c253-ce04-6c42-8bf6",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner of the Relentless Company",
+            "id": "bb2c-8475-bb19-83e7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6454-0e64-e88b-0afa",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Flaming Standard",
+            "id": "3046-d937-6007-f9a9",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "58a9-c83f-8819-4bfa",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Stalker's Standard",
+            "id": "6fda-106b-c998-3348",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1339-adda-070d-906c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Legion Standard",
+            "id": "0992-5c15-3353-133d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e2f6-29ee-8b26-9f6e",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Banner Enchantments (Unit)",
+        "id": "4eb1-cabb-a838-a005",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "d478-5a11-0230-7a8c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Aether Icon",
+            "id": "cdc1-5f96-e5ca-0215",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8a96-40ff-7fb6-54a0",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner of Discipline",
+            "id": "b485-d7a5-7901-04c6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bd1e-b521-5357-bc0e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner of Speed",
+            "id": "7270-a619-9d01-bab9",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c253-ce04-6c42-8bf6",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner of the Relentless Company",
+            "id": "2314-1e37-1921-1a3a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6454-0e64-e88b-0afa",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Flaming Standard",
+            "id": "0621-a3d6-4ab0-3240",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "58a9-c83f-8819-4bfa",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Stalker's Standard",
+            "id": "a381-eb39-4e82-c6b5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1339-adda-070d-906c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Legion Standard",
+            "id": "1984-fb34-d302-dc22",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e2f6-29ee-8b26-9f6e",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ]
+  }
+}
