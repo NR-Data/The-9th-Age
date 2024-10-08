@@ -1,0 +1,4042 @@
+{
+  "gameSystem": {
+    "name": "The 9th Age: Fantasy Battles 3rd Edition",
+    "id": "8c9a-3026-84b4-cf16",
+    "authorName": "DarkSky",
+    "authorUrl": "https://www.the-ninth-age.com/",
+    "battleScribeVersion": 2.03,
+    "revision": 9,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Core", "id": "4bcd-01c8-ce5e-7108", "hidden": false},
+      {"name": "Special", "id": "f8f1-3d4f-12bf-73cd", "hidden": false},
+      {"name": "Characters", "id": "953d-22cd-7ee1-36dc", "hidden": false}
+    ],
+    "costTypes": [{"name": "pts", "id": "24fd-8af8-0c78-001c", "defaultCostLimit": -1, "hidden": false}],
+    "forceEntries": [{"name": "~ Dummy ~", "id": "16e8-e66f-0b41-756b", "hidden": true}],
+    "sharedSelectionEntries": [
+      {
+        "name": "Mundane: Shield",
+        "id": "ff97-a295-86c8-76d5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d158-aeff-6968-2615",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Melee: Spear",
+        "id": "e79a-e00b-b0ee-6850",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8a37-3686-46d8-6eb0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Melee: Paired Weapons",
+        "id": "6a41-63a5-c5f6-66f6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "236a-7e57-0706-fc14",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Melee: Lance",
+        "id": "b10f-350c-0581-f9c2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2ff1-d7f1-dfdc-8762",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Ranged: Crossbow",
+        "id": "8dad-9602-9dd1-7698",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "dece-abfb-1646-28f2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Ranged: Bow",
+        "id": "e2c0-2230-5a1a-1f08",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4382-0938-eb2f-87d2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Melee: Great Weapon",
+        "id": "2837-ec0d-956f-690a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c73d-37e8-2340-287d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Melee: Halberd",
+        "id": "544f-9331-9cce-694d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b311-493d-9678-8b90",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Ranged: Longbow",
+        "id": "cc20-7463-8302-21b4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cb60-f5ed-2fc9-4921",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Ranged: Pistol",
+        "id": "bdc6-e116-53be-d2ae",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f540-01da-46f0-6811",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Ranged: Throwing Weapons",
+        "id": "b672-9729-1d95-cb6d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e829-ad61-66b7-5b70",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Melee: Light Lance",
+        "id": "7efd-252a-dcad-fa35",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b7cd-87e0-ef2f-540a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "P&S: Binding Scroll",
+        "id": "3f7d-5a54-b1ca-550f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4f02-3f8e-7013-7cb4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0533-e602-37d0-79cd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 55}]
+      },
+      {
+        "name": "Artefact: Crown of the Wizard King",
+        "id": "28c9-d1c6-a0c8-d695",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1828-5940-a898-08ac",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "7520-60ab-8f28-6061",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "P&S: Dragon's Brew",
+        "id": "b996-d7ae-e854-2601",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cf4d-573e-5b14-f5df",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "bbd3-3550-c358-b9e9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "P&S: Spell Scroll",
+        "id": "ebd9-2cee-402a-4ff4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d5c0-6e49-2bc3-cab3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f5c6-2684-9a12-e8c2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "P&S: Potion of Swiftness",
+        "id": "fc3e-7023-b3ce-8579",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "579c-0a47-7f43-2f98",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1b81-fea2-1f62-ddf9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+      },
+      {
+        "name": "Artefact: Rod of Battle",
+        "id": "2078-81dc-eac0-b856",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4632-77ba-878a-d216",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0b86-31b2-574f-645e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "P&S: Scroll of Power",
+        "id": "52aa-545b-5fc8-64fe",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5967-7f82-f3fb-1325",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "19eb-8b4c-d707-8268",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Artefact: Talisman of Shielding",
+        "id": "8cca-6eee-ecd5-1620",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c4d9-6201-993c-7c61",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "8fda-8f2c-9c0f-c4d5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 45}]
+      },
+      {
+        "name": "Artefact: Essence of a Free Mind",
+        "id": "3db5-8d52-cfe9-fbfa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "73b8-f867-8841-bdf9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f865-a3c5-c1c3-e973",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Artefact: Magical Heirloom",
+        "id": "1a15-8ac5-586b-1b94",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "09fb-61bf-d2b2-eb15",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "a514-8cb4-1139-9905",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Weapon: Vorpal Binding",
+        "id": "8a96-40ff-7fb6-54a0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e301-4817-97c9-61ee",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "3290-f93c-4203-1ed8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 70}]
+      },
+      {
+        "name": "Weapon: Touch of Greatness",
+        "id": "bd1e-b521-5357-bc0e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a2e6-5898-c18e-073d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0f3d-dc64-2d8e-fea1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}]
+      },
+      {
+        "name": "Weapon: Giant Slayer (not on 4-5)",
+        "id": "c253-ce04-6c42-8bf6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b8ec-88fe-1802-034c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "d519-ce01-461a-a9f0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 25}]
+      },
+      {
+        "name": "Weapon: Hero's Heart (only on HW, PW)",
+        "id": "6454-0e64-e88b-0afa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "65fc-77a6-bc7d-708b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "18d3-e6b2-9af0-18e2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Banner: Flaming Standard",
+        "id": "58a9-c83f-8819-4bfa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5ac7-02ae-0ab4-ee85",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "7194-2105-0fb1-913d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+      },
+      {
+        "name": "Banner: Stalker's Standard",
+        "id": "1339-adda-070d-906c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d603-9133-33a0-7df8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1ae1-5497-4f16-c5b7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Weapon: King Slayer",
+        "id": "98fe-a333-8a21-dcb0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "fe44-8d00-aa93-3344",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "22bb-70bd-571d-6017",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Armour: Basalt Infusion (not on 5)",
+        "id": "5348-8c71-c793-57f3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a676-50d6-34dd-4c20",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "5490-f0a4-8106-e9b5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Armour: Death Cheater (not on 5)",
+        "id": "cba2-e616-5486-217b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "680d-7f06-0c0a-06c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "472d-0bff-19ad-b513",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Armour: Destiny's Call (not on 5 or Construct)",
+        "id": "b8a1-4182-3aba-ffd8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7d9e-0dd9-9c03-22c9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "441f-cdc3-2641-5eb4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 70}]
+      },
+      {
+        "name": "Armour: Ghostly Guard (not on 5)",
+        "id": "08dd-2bd2-1e5a-1f39",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "148f-f6ba-c045-3317",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "ee96-f598-71db-f5e8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Shield: Dusk Forged (not on 5)",
+        "id": "97f7-20ef-fc6c-63a7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "93db-9a6d-1119-f5c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "d8fb-29d0-debc-809d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Shield: Wild Warding (not on 5)",
+        "id": "41fe-d2cc-82ef-381a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "213f-7fe0-7bf6-4d56",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "a232-f363-a538-7798",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Wizard Apprentice",
+        "id": "9dfd-528a-2991-3f75",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "98e7-37b2-b6a7-13ce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Wizard Adept",
+        "id": "6d2e-3a7c-b8c4-2589",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1c80-09df-b71b-762a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Wizard Master",
+        "id": "e7ab-249b-e180-109d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ecac-fac9-9f47-edc2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Ranged: Handgun",
+        "id": "aa9c-bdad-7fe7-36a3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2cee-06b2-0fb3-9855",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Army General",
+        "id": "d664-b973-594c-5971",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9e95-5927-c752-12ce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "318b-239e-60fa-42ef",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Battle Standard Bearer",
+        "id": "1816-6a9c-7e82-694a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2602-ba16-b629-3cf5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "051e-eed8-4d48-2248",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 50}]
+      },
+      {
+        "name": "Melee: Hand Weapon",
+        "id": "d5a4-4049-60de-5914",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "eab6-c8da-2be4-d5ca",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "CG: Musician",
+        "id": "10fe-ce12-d662-ae02",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9968-adaf-9cb5-9219",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+      },
+      {
+        "name": "CG: Standard Bearer",
+        "id": "8f82-6955-3d8a-01ea",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1e07-8da4-71e3-21bd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 15}]
+      },
+      {
+        "name": "Weapon: Shield Breaker",
+        "id": "893e-3088-4b72-0f0a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "fd99-5008-a443-5059",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "2df8-86ea-15de-9cb6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Weapon: Supernatural Dexterity",
+        "id": "e646-0b79-a1f3-8403",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0eff-4a5e-9fd5-1840",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "cb5b-e66d-97ce-96ef",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Weapon: Eldritch Inscriptions",
+        "id": "3524-fbbd-99f1-4f7f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6f0c-75ae-f4e6-06c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "b429-ef2c-56e0-2f77",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Armour: Warding of Unity (not on 4-5 or exclusive)",
+        "id": "df39-7208-8901-186e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "71e4-bbe5-3ac1-f919",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "ae24-62d0-5cc0-6404",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "Shield: Sigil of Protection (not on 5)",
+        "id": "fefe-226d-24a9-9efe",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5b54-fd61-a341-4b94",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1b46-f867-80ee-171e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Artefact: Mimic Cloak (not on 4-5)",
+        "id": "ae18-1071-359a-ed03",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "aab8-6f87-d063-68e9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "39b5-a79f-7e3d-352f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      },
+      {
+        "name": "Artefact: Talisman of the Void",
+        "id": "6377-f305-83f7-9417",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8711-015a-8ffd-7c99",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "746a-7562-1709-2bc1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 35}]
+      },
+      {
+        "name": "Artefact: Mask of Mindless Violence (not on 4-5)",
+        "id": "7273-9f4c-b409-f689",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0836-e09e-4fa9-6601",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "7a38-6ca0-b8f6-b80b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Artefact: Obsidian Rock",
+        "id": "2c2d-4bea-5c31-5ba3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d5f5-4a51-d2a8-f441",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "516f-e862-46c2-fa54",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "P&S: Troll Tonic (not on 5)",
+        "id": "8931-ff15-6f7f-2b2a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2a1b-1b58-3966-817f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1229-9754-06e7-d482",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 20}]
+      },
+      {
+        "name": "P&S: Potion of Healing (not on 5)",
+        "id": "47e3-2f3a-6a54-f42b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ab68-599f-053c-6b9d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1ad4-85fe-14cb-4512",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "P&S: Elixier of Negation (not on 5)",
+        "id": "b361-b115-36e5-cafe",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6620-850a-4891-5fab",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "adf0-a45d-61a5-f407",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Banner: Sheltering Standard",
+        "id": "c3cf-d3df-ce09-fca7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "66ef-6f1c-6452-54d6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "2f13-e2e7-228d-f3e2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 30}]
+      },
+      {
+        "name": "Banner: Aether Icon",
+        "id": "4d9d-cdb9-599d-52e5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b825-ef97-8736-d21b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "4be1-b0cf-2dea-8a1e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 10}]
+      },
+      {
+        "name": "Banner: Banner of Discipline",
+        "id": "86f3-ea7a-1c9a-4821",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "18ee-dd89-4f7a-0a8f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "cf50-ecbf-be08-08ca",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Banner: Banner of Speed",
+        "id": "de39-7408-9056-da25",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6f48-99bd-44f2-5d77",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f9f9-f729-becb-66ab",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Banner: Distortion Emblem",
+        "id": "8766-a2b0-9ef9-9c61",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3591-7229-e9ed-b191",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "09ab-da9e-dd86-3435",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Banner: Rending Banner",
+        "id": "e376-2a1f-bf95-1eb5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ecf7-e76c-3c3a-6ea1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "a45e-7bc6-6df8-b44d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Alchemy",
+        "id": "d250-82d6-87d2-3a02",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "31b3-647d-8345-b2cc",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Divination",
+        "id": "f5fc-a15c-6c10-ff45",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a5bb-a137-2b4d-4635",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Evocation",
+        "id": "4583-991f-d493-f321",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "35ea-7631-0f14-b688",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Druidism",
+        "id": "3df8-f727-aa90-c4a5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5c34-e4e1-729d-3ac0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Cosmology",
+        "id": "a56e-a327-8905-3194",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "479f-7d50-2ebd-5518",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Shamanism",
+        "id": "36bf-5fb9-32bc-229a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3ba3-33a8-cb3d-649f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Witchcraft",
+        "id": "180f-f95b-787a-93b4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2ac1-5e62-4afe-cfd9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Thaumaturgy",
+        "id": "22cc-50e4-e8e3-97e2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b1ab-1a09-28b1-b76b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Pyromancy",
+        "id": "5a2d-a72f-83e2-c29a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6822-8a23-de0e-5e97",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Path: Occultism",
+        "id": "cb6a-b12e-53b5-6499",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "dd82-7887-c21f-6acc",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Alc1) Molten Copper",
+        "id": "6adb-2216-392f-d9d1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5c3d-74be-87f1-312d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Alc2) Corruption of Tin",
+        "id": "0051-7b5f-a557-e891",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "bba1-dc5a-b061-3c5f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Alc3) Living Steel",
+        "id": "19a9-3070-d0e3-c614",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5ec0-d831-fde6-715c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Alc4) Wall of Lead",
+        "id": "2190-f52a-e387-f8c2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "023a-ccbe-fa16-d5f5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Alc5) Word of Iron",
+        "id": "c334-4294-4a00-1f4b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cf35-7640-e11e-f434",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Alc6) Quicksilver Lash",
+        "id": "2cc9-8193-f458-adfe",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9b21-2eb6-fe82-aeac",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Cos1) Weal and Woe",
+        "id": "f15b-85b6-b957-1649",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "392e-c417-8969-ecd7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Cos2) Hearts and Minds",
+        "id": "84d5-9d16-405d-0d8f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5596-2a56-f3d0-cc53",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Cos3) Truth of Time",
+        "id": "f977-5198-f93a-719e",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "82f9-6023-ea4e-20df",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Cos4) Ice and Fire",
+        "id": "9a28-7726-57b4-fa6d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1a71-10a2-9441-9268",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Cos5) Cosmic Scales",
+        "id": "395a-498e-bec0-81ee",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4f26-d769-fe89-9593",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Cos6) Near and Far",
+        "id": "9070-2c35-45c0-2c20",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5e6f-8f87-fd3b-d07d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Div1) Foresight",
+        "id": "d7d7-14c2-c82c-22a2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "15dd-c165-3adf-3ab7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Div2) Fate's Judgment",
+        "id": "d443-c96d-7e83-e87d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "00c0-16c9-9e2d-6cab",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Div3) The Stars Align",
+        "id": "f1ca-e2a2-b577-83e8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6eeb-b747-a95a-1fea",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Div4) Chance of Redemption",
+        "id": "a9c4-ef17-1698-dd2f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2edf-92e3-f862-d71e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Div5) Inescapable Doom",
+        "id": "5ca7-3088-5c05-bb0d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "459a-ebb6-8ded-0197",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Div6) Augury of Despair",
+        "id": "fd56-26bf-36db-b61b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "26a9-e2db-30b3-b3b0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Dru1) Fountain of Youth",
+        "id": "678a-8595-a675-5627",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ef4b-67f8-b57a-3a81",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Dru2) Entwining Roots",
+        "id": "ff50-420b-fcab-4d93",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "efb8-ae11-b41e-669f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Dru3) Healing Waters",
+        "id": "43cc-19be-519d-7011",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5dd7-339d-d036-66de",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Dru4) Nature's Venom",
+        "id": "53b2-573d-37d3-935d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6506-7ef4-7042-7150",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Dru5) Stone Skin",
+        "id": "fe21-9d0f-179f-01c3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e6af-eb90-787c-4603",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Dru6) Earth's Blessing",
+        "id": "dee3-3073-b71c-8797",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "27d1-47bb-60bb-cc28",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Evo1) Whispers of the Veil",
+        "id": "312f-9421-1a32-6df4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "57c2-8da7-c6f9-a7ad",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Evo2) Touch of the Reaper",
+        "id": "7870-4298-147d-e65c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "54c2-b606-726a-aa7b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Evo3) Danse Macabre",
+        "id": "dab6-fec5-9cff-8416",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "532c-7d9f-9545-71d6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Evo4) Chorus of the Damned",
+        "id": "0cce-8107-31f2-6156",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "145d-fa78-fd98-5591",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Evo5) Spectral Blades",
+        "id": "fc2f-3de1-612e-77a7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2aa0-0890-cfd9-0c21",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Evo6) Soul Blight",
+        "id": "f725-a2e2-d7f3-840d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5fad-e945-5802-0bb5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Occ1) The Devouring Dark",
+        "id": "effd-6d84-330d-88d3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b39a-ebd6-786f-bddb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Occ2) Hand of Glory",
+        "id": "9c17-af21-2696-a017",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "923c-98b2-3fca-1065",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Occ3) Blood Curse",
+        "id": "9c15-a82c-7ae4-5b68",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cd5c-a46b-39bf-cb8d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Occ4) Pentagram of Pain",
+        "id": "8e94-e452-ca4f-5e1b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a249-e28d-2046-5a8c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Occ5) The Grave Calls",
+        "id": "eb2f-e83d-e1ea-3924",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "91a0-8bb5-adab-6124",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Occ6) Umbral Majesty",
+        "id": "c7a9-510a-2557-d0a1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1849-6d94-71bc-8dd5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Pyro1) Fireball",
+        "id": "3581-7cb5-5c57-bc54",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "691d-06cd-b6be-95b1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Pyro2) Flaming Swords",
+        "id": "ba5c-b212-deb5-25c1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1ea2-23d2-b4fa-2c13",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Pyro3) Dragon's Roar",
+        "id": "81f4-460b-29a9-9fc2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7cc8-4d32-8e23-15b1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Pyro4) Pyroclastic Flow",
+        "id": "4c85-6b3f-87ec-549b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "42b2-3af3-cbd6-2bb7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Pyro5) Pillars of Fire",
+        "id": "c8e2-3043-9bfa-b103",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3cd8-8bf7-66f0-40f8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Pyro6) Cage of Embers",
+        "id": "fdae-b006-4a4e-63a8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c01a-3385-af8f-6060",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Sha1) Predator's Instinct",
+        "id": "a15b-9f3e-b78d-220d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f693-6a64-c7dd-c926",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Sha2) Awaken the Beast",
+        "id": "c4f8-30bf-ccf2-24e2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6f45-7437-c618-627c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Sha3) Swarm of Insects",
+        "id": "01e6-c234-fb70-b727",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b1de-3503-fc5e-1db1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Sha4) Savage Fury",
+        "id": "6eff-e19a-c44f-84ba",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b03f-6600-573f-e300",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Sha5) Totemic Summon",
+        "id": "fdcc-0368-e44c-8e2b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cf8a-342e-3e1c-3289",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Sha6) Wild Shape",
+        "id": "84c9-b052-dc77-c8e6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "eac5-3646-e2c1-982d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Tha1) Smite the Unbeliever",
+        "id": "a7e7-090d-fa52-7c1e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2171-f307-77dd-6e47",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Tha2) Light of Faith",
+        "id": "04b6-3d87-eefb-5c01",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7c9e-a3ef-5837-3074",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Tha3) Weight of Judgement",
+        "id": "83f5-fc64-7b51-3e1c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "754e-7be8-c2c2-ccf9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Tha4) Holy Affliction",
+        "id": "7670-eed6-b571-0301",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2f3b-7c6e-71f1-f863",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Tha5) Rain of Fire",
+        "id": "2f67-0c04-f1ee-fa93",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cb58-cf46-fef4-847c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Tha6) Wrath of God",
+        "id": "22e4-ee9f-69a0-997f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8d92-adbd-b3b1-20ad",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Wit1) Evil Eye",
+        "id": "7940-ee86-0449-b1d4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b347-124f-ce49-d143",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Wit2) Soured Luck",
+        "id": "ec77-e984-3a09-6d13",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7d6b-7056-4abb-03a4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Wit3) Illusory Paths",
+        "id": "e9f1-c19b-0b9f-b60a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6e14-5bf8-691c-7682",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Wit4) Cauldron's Curse",
+        "id": "a649-e4ee-fded-f26c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5aad-11d1-2f2f-f961",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Wit5) Mists of Invisibility",
+        "id": "c0a3-2346-2258-66a0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ca74-c2c4-928b-f576",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Spell: (Wit6) Clouded Sight",
+        "id": "6631-cabd-d6a3-95aa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6c2a-7c4d-2fbe-c7e0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Captain and Attached",
+        "id": "1dee-cdb4-b5b9-12ba",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6452-29c3-e0aa-11f3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 0}]
+      },
+      {
+        "name": "Banner: Banner of Recruitment",
+        "id": "2a74-df7a-a39e-9f32",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "933d-2e16-473d-9711",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0299-bab1-4c98-9ac2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 40}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "[AC] Weapon Enchantments",
+        "id": "f853-d3c3-4165-d5ab",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "c2f2-85bc-ce11-c49d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Weapon: Vorpal Binding",
+            "id": "49ed-ebfb-447f-7448",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8a96-40ff-7fb6-54a0",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Weapon: Touch of Greatness",
+            "id": "64d1-db8b-9c67-058c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bd1e-b521-5357-bc0e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Weapon: King Slayer",
+            "id": "365f-3fdc-53d6-aaad",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "98fe-a333-8a21-dcb0",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Weapon: Giant Slayer",
+            "id": "404b-27b0-4e12-cb3e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c253-ce04-6c42-8bf6",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Command Group",
+        "id": "b4c3-e840-1bd5-b746",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Standard Bearer",
+            "id": "707a-8897-5a0d-a04c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8f82-6955-3d8a-01ea",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Musician",
+            "id": "7e9e-ad84-4aa7-020a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "10fe-ce12-d662-ae02",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "[AC] Shield Enchantments",
+        "id": "3ca8-d93a-232c-d3b5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "a2c1-9afa-9cd4-c449",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Shield: Wild Warding",
+            "id": "a527-0e68-b768-0605",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "41fe-d2cc-82ef-381a",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "[AC] Armour Enchantments",
+        "id": "74ad-3e59-5174-60fa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "7bf2-549c-6ff1-924f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Armour: Destiny's Call",
+            "id": "0c22-f5d2-8ec4-32d6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b8a1-4182-3aba-ffd8",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Armour: Basalt Infusion",
+            "id": "047f-7951-775b-18cf",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "5348-8c71-c793-57f3",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Armour: Warding of Unity",
+            "id": "7d40-4901-7b18-c4e4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "df39-7208-8901-186e",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "[AC] Artefacts (Wizards)",
+        "id": "ab25-3916-e8af-98cb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "c9f3-ddeb-b459-fd84",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Artefact: Talisman of Shielding",
+            "id": "855c-aa12-d776-3c72",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8cca-6eee-ecd5-1620",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Magical Heirloom",
+            "id": "c878-11af-72e0-9412",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1a15-8ac5-586b-1b94",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Mimic Cloak",
+            "id": "5189-3669-0030-631d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ae18-1071-359a-ed03",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Talisman of the Void",
+            "id": "2107-5cce-cd9d-3511",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6377-f305-83f7-9417",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "[AC] Artefacts (non-Wizards)",
+        "id": "6e26-c5df-c19e-83d4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "4658-33b0-7815-0832",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Artefact: Crown of the Wizard King",
+            "id": "17f0-336d-10ca-7207",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "28c9-d1c6-a0c8-d695",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Talisman of Shielding",
+            "id": "c868-27b1-3c68-d17c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8cca-6eee-ecd5-1620",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "[AC] Banner Enchantments",
+        "id": "4eb1-cabb-a838-a005",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "d478-5a11-0230-7a8c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Flaming Standard",
+            "id": "0621-a3d6-4ab0-3240",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "58a9-c83f-8819-4bfa",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner: Stalker's Standard",
+            "id": "a381-eb39-4e82-c6b5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1339-adda-070d-906c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner: Aether Icon",
+            "id": "de46-d338-2431-3ffd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "4d9d-cdb9-599d-52e5",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Banner: Sheltering Standard",
+            "id": "191d-b403-d8fa-21a7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c3cf-d3df-ce09-fca7",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "[AC] Potions and Scrolls",
+        "id": "b37c-595d-f483-3f9c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "26ef-e21b-e058-bb8f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "P&S: Potion of Swiftness",
+            "id": "14e6-08ed-ca3e-287f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "fc3e-7023-b3ce-8579",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "P&S: Binding Scroll",
+            "id": "b840-e5f0-a29a-7836",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3f7d-5a54-b1ca-550f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "P&S: Dragon's Brew",
+            "id": "f3c6-248f-b9d5-b800",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b996-d7ae-e854-2601",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "P&S: Troll Tonic",
+            "id": "9908-3b84-e711-bbc1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8931-ff15-6f7f-2b2a",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Command Group (Core)",
+        "id": "19a0-8d2d-7f8e-5516",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Standard Bearer",
+            "id": "3ee8-5920-3c63-f478",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8f82-6955-3d8a-01ea",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "24fd-8af8-0c78-001c", "value": 5}]
+          },
+          {
+            "name": "Musician",
+            "id": "9873-a922-96bb-b2e8",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "10fe-ce12-d662-ae02",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "not on 5",
+        "id": "2114-9194-8847-c19e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Armour: Basalt Infusion (not on 5)",
+            "id": "4dbb-09f4-ba58-9c18",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "5348-8c71-c793-57f3",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Armour: Death Cheater (not on 5)",
+            "id": "0084-5627-3b03-99fd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "cba2-e616-5486-217b",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Armour: Destiny's Call (not on 5 or Construct)",
+            "id": "f9d9-5353-86e1-f5e2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b8a1-4182-3aba-ffd8",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Armour: Ghostly Guard (not on 5)",
+            "id": "94b8-730a-5410-1681",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "08dd-2bd2-1e5a-1f39",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Armour: Warding of Unity (not on 4-5)",
+            "id": "5082-5c0e-2af3-ae64",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "df39-7208-8901-186e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Mask of Mindless Violence (not on 4-5)",
+            "id": "9d7b-828d-2cab-23fa",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "7273-9f4c-b409-f689",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "P&S: Elixier of Negation (not on 5)",
+            "id": "2457-0471-8a82-cd2d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b361-b115-36e5-cafe",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "P&S: Potion of Healing (not on 5)",
+            "id": "1f70-a46f-7bcb-2c2f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "47e3-2f3a-6a54-f42b",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "P&S: Troll Tonic (not on 5)",
+            "id": "939e-e48f-4dae-323b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8931-ff15-6f7f-2b2a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Shield: Dusk Forged (not on 5)",
+            "id": "61d8-1911-280b-dcd3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "97f7-20ef-fc6c-63a7",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Shield: Sigil of Protection (not on 5)",
+            "id": "d9ea-5527-9473-92f4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "fefe-226d-24a9-9efe",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Shield: Wild Warding (not on 5)",
+            "id": "ebda-6e16-ce58-05b6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "41fe-d2cc-82ef-381a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Weapon: Giant Slayer (not on 5)",
+            "id": "8958-058e-8e64-1387",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c253-ce04-6c42-8bf6",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Mimic Cloak (not on 4-5)",
+            "id": "f9f6-37ba-5ad7-b113",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ae18-1071-359a-ed03",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "not on 4",
+        "id": "97f4-4ba0-4fdc-7933",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Armour: Warding of Unity (not on 4-5)",
+            "id": "4198-1b0d-c675-3f46",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "df39-7208-8901-186e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Mask of Mindless Violence (not on 4-5)",
+            "id": "6451-91bf-36d5-6bd2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "7273-9f4c-b409-f689",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Weapon: Giant Slayer (not on 4-5)",
+            "id": "25f1-12d2-02f1-bc43",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c253-ce04-6c42-8bf6",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Artefact: Mimic Cloak (not on 4-5)",
+            "id": "29ef-dc6c-9527-1677",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ae18-1071-359a-ed03",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ]
+  }
+}
