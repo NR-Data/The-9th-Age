@@ -1,35 +1,52 @@
-The 9th Age
-===========
+# The 9th Age: Fantasy Battles 2nd Edition 2024 data
 
-#### Contents ####
+Army list data files for The 9th Age: Fantasy Battles 2nd Edition 2024.
 
-* [Overview][]
-* [Links][]
+> **Community rehost.** These files were written by the community contributors listed below and were previously published at `github.com/BSData/The-9th-Age`, which is no longer online. This copy keeps them available and open to updates.
+>
+> They are not made, maintained or endorsed by NewRecruit. Nobody here is affiliated with or endorsed by the publisher of The 9th Age: Fantasy Battles 2nd Edition 2024. All game names and trademarks belong to their respective owners. You still need the official rules to play.
 
-## Overview ##
-[Overview]: #overview
+## Is this maintained?
 
-__What's this?__
+It is open for updates, not archived. It is kept up by whoever contributes to it, so check the commit history to see how current it is. Last data change before the rehost: 2024-10-09.
 
-The 9th Age project homepage: http://www.the-ninth-age.com/
+## How to update it
 
-BSData organisation created this project. It's GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe. If you want
-to develop - cool! We need you! Take a look at [Getting Started wiki][]
+- **Pull request:** fork this repository, make your changes and open a pull request.
+- **Write access:** if you want to maintain this game, ask on the NewRecruit Discord: https://discord.gg/cCtqGbugwb
 
-__Okay, nice project. Is it actually working?__ _I just want those files..._
+## File format
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
+The files are JSON, converted on 2026-11-16 from the original BattleScribe XML (`.cat`/`.gst`). The XML versions are in the git history before that commit.
 
+## Authors
 
-## Links ##
-[Links]: #links
+From the git history of the data files:
 
-* [BattleScribe homepage][]
-* [BattleScribe Data on Appspot][]
-* [Getting Started wiki][]
-
-
-[BattleScribe homepage]: http://www.battlescribe.net/
-[BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
-[Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started#contributing
+- Karanadon
+- Sebastian Wegmann
+- Arturius1
+- bombastian2000
+- DarkSky
+- Toreador13
+- rzmoz
+- capelle
+- Colin Goudie
+- Sean
+- beckian
+- Nick Lironi-Irvine
+- Mikel2311
+- grossmaul2130
+- Artur Fijalkowski
+- Vrenel
+- Artur WarX Fijalkowski
+- sjgoodsell
+- BSDataAnon
+- JimmyMalmer
+- Idum
+- Benoit Foucque
+- Adrian A
+- artur-fijalkowski
+- marcqg
+- Capelle Camille
+- Oskar Gargas
